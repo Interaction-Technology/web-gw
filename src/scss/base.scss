@@ -1,0 +1,40 @@
+/* 重置 */
+
+@import "sass/reset";
+
+/* 公共 */
+
+body {
+    font-family: "Microsoft Yahei", "黑体", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #5f5f5f;
+}
+
+.clearfix {
+    clear: both;
+    overflow: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.w1300 {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.bgc-jh {
+    background-color: #58dd00;
+}
+
+
+/* 公用边距及字体 */
+
+@import "sass/spacing";
+@import "sass/fontSize";
