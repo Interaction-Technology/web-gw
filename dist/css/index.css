@@ -54,7 +54,7 @@ body { min-width: 1310px; }
 /* 我们 */
 .cnt-ours { position: relative; overflow: hidden; }
 
-.cnt-ours > img { position: absolute; top: 0; left: 0; right: 0; z-index: -1; }
+.cnt-ours .map { position: absolute; z-index: -1; height: 100%; }
 
 .ours-logo { height: 440px; border-right: 1px solid #5f6964; padding-top: 160px; margin-left: 50px; }
 
@@ -75,8 +75,6 @@ body { min-width: 1310px; }
 .ours-addr-img li span { position: absolute; top: 50%; left: -50px; font-size: 18px; color: #fff; margin-top: -9px; width: 36px; display: block; border-bottom: 2px solid #fff; }
 
 .ours-addr-img li img { width: 200px; height: 200px; border-radius: 50%; }
-
-.map { position: absolute; z-index: -1; height: 100%; }
 
 .ours-addr-node { /* 呼吸灯动画 */ }
 

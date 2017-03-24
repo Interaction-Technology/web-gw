@@ -99,12 +99,10 @@ body {
 .cnt-ours {
     position: relative;
     overflow: hidden;
-    & > img {
+    .map {
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
         z-index: -1;
+        height: 100%;
     }
 }
 
@@ -169,12 +167,6 @@ body {
             border-radius: 50%;
         }
     }
-}
-
-.map {
-    position: absolute;
-    z-index: -1;
-    height: 100%;
 }
 
 .ours-addr-node {
