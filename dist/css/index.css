@@ -54,7 +54,7 @@ body { min-width: 1310px; }
 /* 我们 */
 .cnt-ours { position: relative; overflow: hidden; }
 
-.cnt-ours .map { position: absolute; z-index: -1; height: 100%; }
+.cnt-ours > img { position: absolute; top: 0; left: 0; right: 0; z-index: -1; }
 
 .ours-logo { height: 440px; border-right: 1px solid #5f6964; padding-top: 160px; margin-left: 50px; }
 
@@ -76,6 +76,10 @@ body { min-width: 1310px; }
 
 .ours-addr-img li img { width: 200px; height: 200px; border-radius: 50%; }
 
+.map { position: absolute; z-index: -1; height: 100%; }
+
+.ours-addr-node { /* 呼吸灯动画 */ }
+
 .ours-addr-node li { border-radius: 50%; width: 12px; height: 12px; position: absolute; background-color: #e4e5e5; }
 
 .ours-addr-node li:hover { cursor: pointer; }
@@ -86,7 +90,7 @@ body { min-width: 1310px; }
 
 .ours-addr-node .addr-nj { bottom: 44%; left: 59%; }
 
-.ours-addr-node .addr-bj { bottom: 50%; left: 58.8%; }
+.ours-addr-node .addr-bj { bottom: 50%; left: 58%; }
 
 .ours-addr-node .atcive { animation: macolor 1.5s ease-out; animation-iteration-count: infinite; }
 
@@ -94,7 +98,6 @@ body { min-width: 1310px; }
 
 .ours-addr-node .atcive:after { content: ""; width: 40px; height: 40px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -20px 0 0 -20px; left: 50%; top: 50%; animation: mysen 1.5s ease-out; -moz-animation: mysen 1.5s ease-out; /* Firefox */ -webkit-animation: mysen 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: mysen 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
 
-/* 呼吸灯动画 */
 @keyframes mycolor { 0% { background-color: #e4e5e5; }
   100% { background-color: #fff; } }
 

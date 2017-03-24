@@ -99,10 +99,12 @@ body {
 .cnt-ours {
     position: relative;
     overflow: hidden;
-    .map {
+    & > img {
         position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
         z-index: -1;
-        height: 100%;
     }
 }
 
@@ -169,6 +171,12 @@ body {
     }
 }
 
+.map {
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+
 .ours-addr-node {
     li {
         border-radius: 50%;
@@ -194,7 +202,7 @@ body {
     }
     .addr-bj {
         bottom: 50%;
-        left: 58.8%;
+        left: 58%;
     }
     .atcive {
         animation: macolor 1.5s ease-out;
@@ -244,62 +252,57 @@ body {
         -webkit-animation-iteration-count: infinite;
         -o-animation-iteration-count: infinite;
     }
-}
-
-
-/* 呼吸灯动画 */
-
-@keyframes mycolor {
-    0% {
-        background-color: #e4e5e5;
+    /* 呼吸灯动画 */
+    @keyframes mycolor {
+        0% {
+            background-color: #e4e5e5;
+        }
+        100% {
+            background-color: #fff;
+        }
     }
-    100% {
-        background-color: #fff;
+    @keyframes myfirst {
+        0% {
+            -webkit-transform: scale(0);
+            opacity: 0.0;
+        }
+        25% {
+            -webkit-transform: scale(0);
+            opacity: 0.1;
+        }
+        50% {
+            -webkit-transform: scale(0.1);
+            opacity: 0.3;
+        }
+        75% {
+            -webkit-transform: scale(0.5);
+            opacity: 0.5;
+        }
+        100% {
+            -webkit-transform: scale(1);
+            opacity: 0.0;
+        }
     }
-}
-
-@keyframes myfirst {
-    0% {
-        -webkit-transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        -webkit-transform: scale(0);
-        opacity: 0.1;
-    }
-    50% {
-        -webkit-transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        -webkit-transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 0.0;
-    }
-}
-
-@keyframes mysen {
-    0% {
-        -webkit-transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        -webkit-transform: scale(0);
-        opacity: 0.1;
-    }
-    50% {
-        -webkit-transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        -webkit-transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 0.0;
+    @keyframes mysen {
+        0% {
+            -webkit-transform: scale(0);
+            opacity: 0.0;
+        }
+        25% {
+            -webkit-transform: scale(0);
+            opacity: 0.1;
+        }
+        50% {
+            -webkit-transform: scale(0.1);
+            opacity: 0.3;
+        }
+        75% {
+            -webkit-transform: scale(0.5);
+            opacity: 0.5;
+        }
+        100% {
+            -webkit-transform: scale(1);
+            opacity: 0.0;
+        }
     }
 }
