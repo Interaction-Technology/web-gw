@@ -244,57 +244,62 @@ body {
         -webkit-animation-iteration-count: infinite;
         -o-animation-iteration-count: infinite;
     }
-    /* 呼吸灯动画 */
-    @keyframes mycolor {
-        0% {
-            background-color: #e4e5e5;
-        }
-        100% {
-            background-color: #fff;
-        }
+}
+
+
+/* 呼吸灯动画 */
+
+@keyframes mycolor {
+    0% {
+        background-color: #e4e5e5;
     }
-    @keyframes myfirst {
-        0% {
-            -webkit-transform: scale(0);
-            opacity: 0.0;
-        }
-        25% {
-            -webkit-transform: scale(0);
-            opacity: 0.1;
-        }
-        50% {
-            -webkit-transform: scale(0.1);
-            opacity: 0.3;
-        }
-        75% {
-            -webkit-transform: scale(0.5);
-            opacity: 0.5;
-        }
-        100% {
-            -webkit-transform: scale(1);
-            opacity: 0.0;
-        }
+    100% {
+        background-color: #fff;
     }
-    @keyframes mysen {
-        0% {
-            -webkit-transform: scale(0);
-            opacity: 0.0;
-        }
-        25% {
-            -webkit-transform: scale(0);
-            opacity: 0.1;
-        }
-        50% {
-            -webkit-transform: scale(0.1);
-            opacity: 0.3;
-        }
-        75% {
-            -webkit-transform: scale(0.5);
-            opacity: 0.5;
-        }
-        100% {
-            -webkit-transform: scale(1);
-            opacity: 0.0;
-        }
+}
+
+@keyframes myfirst {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        -webkit-transform: scale(0);
+        opacity: 0.1;
+    }
+    50% {
+        -webkit-transform: scale(0.1);
+        opacity: 0.3;
+    }
+    75% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0.0;
+    }
+}
+
+@keyframes mysen {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        -webkit-transform: scale(0);
+        opacity: 0.1;
+    }
+    50% {
+        -webkit-transform: scale(0.1);
+        opacity: 0.3;
+    }
+    75% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0.0;
     }
 }
