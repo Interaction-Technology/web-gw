@@ -17,6 +17,11 @@ header,
     height: 32px;
     display: block;
     background-image: url(../images/logo/logo.png);
+    a{
+        display: inline-block;
+        width: 142px;
+        height: 32px;
+    }
 }
 
 nav {

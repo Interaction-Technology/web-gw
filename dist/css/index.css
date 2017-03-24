@@ -4,6 +4,8 @@ header, .header { width: 100%; height: 62px; position: fixed; top: 0; left: 0; b
 
 .logo { margin-top: 15px; float: left; width: 142px; height: 32px; display: block; background-image: url(../images/logo/logo.png); }
 
+.logo a { display: inline-block; width: 142px; height: 32px; }
+
 nav ul { display: inline-block; line-height: 60px; overflow: hidden; }
 
 nav ul li { float: left; margin-right: 60px; }
@@ -25,36 +27,36 @@ body { min-width: 1310px; }
 /* 主体 */
 .cnt { width: 100%; }
 
-.cnt h2 { height: 60px; width: 160px; margin: 0 auto 100px; border-bottom: 2px solid #58DD00; font-size: 40px; text-align: center; }
+.cnt h2 { font-size: 40px; width: 160px; height: 60px; margin: 0 auto 100px; text-align: center; border-bottom: 2px solid #58dd00; }
 
 /* 服务 */
-.cnt-service ul { width: 100%; overflow: hidden; }
+.cnt-service ul { overflow: hidden; width: 100%; }
 
 .cnt-service ul li:first-child { margin-left: 0; }
 
-.cnt-service ul li { width: 280px; float: left; margin-left: 60px; }
+.cnt-service ul li { float: left; width: 280px; margin-left: 60px; }
 
 .cnt-service ul li img { width: 280px; height: 240px; }
 
-.cnt-service ul li h3 { font-size: 30px; color: #666666; text-align: center; margin: 60px 0 30px; }
+.cnt-service ul li h3 { font-size: 30px; margin: 60px 0 30px; text-align: center; color: #666; }
 
-.cnt-service ul li p { padding: 0 10px; font-size: 18px; color: #999999; text-align: center; line-height: 28px; letter-spacing: 2px; }
+.cnt-service ul li p { font-size: 18px; line-height: 28px; padding: 0 10px; text-align: center; letter-spacing: 2px; color: #999; }
 
 /* 成果 */
-.cnt-result { background-image: url("../images/home/bg-cg.png"); text-align: center; }
+.cnt-result { text-align: center; background-image: url("../images/home/bg-cg.png"); }
 
-.cnt-result h2 { height: 60px; width: 160px; margin: 0 auto 50px; border-bottom: 2px solid #58DD00; font-size: 40px; text-align: center; }
+.cnt-result h2 { font-size: 40px; width: 160px; height: 60px; margin: 0 auto 50px; text-align: center; border-bottom: 2px solid #58dd00; }
 
-.cnt-result p { font-size: 18px; color: #5f5f5f; width: 1000px; margin: auto; line-height: 28px; }
+.cnt-result p { font-size: 18px; line-height: 28px; width: 1000px; margin: auto; color: #5f5f5f; }
 
-.cnt-result .result-show img { width: auto; display: block; margin: 60px auto 0; }
+.cnt-result .result-show img { display: block; width: auto; margin: 60px auto 0; }
 
 /* 我们 */
 .cnt-ours { position: relative; overflow: hidden; }
 
-.cnt-ours > img { position: absolute; top: 0; left: 0; right: 0; z-index: -1; }
+.cnt-ours > img { position: absolute; z-index: -1; top: 0; right: 0; left: 0; }
 
-.ours-logo { height: 440px; border-right: 1px solid #5f6964; padding-top: 160px; margin-left: 50px; }
+.ours-logo { height: 440px; margin-left: 50px; padding-top: 160px; border-right: 1px solid #5f6964; }
 
 .ours-logo img { width: 160px; height: 160px; }
 
@@ -62,59 +64,58 @@ body { min-width: 1310px; }
 
 .ours-addr-info dl dt { font-size: 18px; color: #fff; }
 
-.ours-addr-info dl span { width: 100%; height: 1px; display: block; background-color: #5f6964; margin: 30px 0; }
+.ours-addr-info dl span { display: block; width: 100%; height: 1px; margin: 30px 0; background-color: #5f6964; }
 
-.ours-addr-info dl dd { font-size: 12px; color: #fff; height: 30px; }
+.ours-addr-info dl dd { font-size: 12px; height: 30px; color: #fff; }
 
-.ours-city { margin-top: 200px; margin-left: 440px; position: relative; width: 200px; height: 200px; }
+.ours-addr-node li { position: absolute; width: 12px; height: 12px; border-radius: 15px; background-color: #e4e5e5; }
 
-.ours-city ul { /* 呼吸灯动画 */ }
+.ours-addr-node li:hover { cursor: pointer; }
 
-.ours-city ul li { border-radius: 50%; width: 12px; height: 12px; position: absolute; background-color: #e4e5e5; }
+.ours-addr-node .addr-bj { bottom: 100px; left: -190px; }
 
-.ours-city ul li:hover { cursor: pointer; }
+.ours-addr-node .addr-wh { bottom: 46px; left: -212px; }
 
-.ours-city ul .addr-sz { bottom: 14px; left: -180px; }
+.ours-addr-node .addr-nj { bottom: 78px; left: -176px; }
 
-.ours-city ul .addr-wh { bottom: 46px; left: -212px; }
+.ours-addr-node .addr-sz { right: 41%; bottom: 34%; }
 
-.ours-city ul .addr-nj { bottom: 78px; left: -176px; }
+.ours-addr-node .atcive { animation: macolor 1.5s ease-out; animation-iteration-count: infinite; }
 
-.ours-city ul .addr-bj { bottom: 100px; left: -190px; }
+.ours-addr-node .atcive:before { position: absolute; top: 50%; left: 50%; display: block; width: 26px; height: 26px; margin: -13px 0 0 -13px; content: ''; /* Firefox */ -webkit-animation: myfirst 1.5s ease-out; -moz-animation: myfirst 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: myfirst 1.5s ease-out; animation: myfirst 1.5s ease-out; -webkit-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; animation-iteration-count: infinite; border-radius: 50%; background-color: white; }
 
-.ours-city ul .atcive { animation: macolor 1.5s ease-out; animation-iteration-count: infinite; }
+.ours-addr-node .atcive:after { position: absolute; top: 50%; left: 50%; display: block; width: 40px; height: 40px; margin: -20px 0 0 -20px; content: ''; /* Firefox */ -webkit-animation: mysen 1.5s ease-out; -moz-animation: mysen 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: mysen 1.5s ease-out; animation: mysen 1.5s ease-out; -webkit-animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; animation-iteration-count: infinite; border-radius: 50%; background-color: white; }
 
-.ours-city ul .atcive:before { content: ""; width: 26px; height: 26px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -13px 0 0 -13px; left: 50%; top: 50%; animation: myfirst 1.5s ease-out; -moz-animation: myfirst 1.5s ease-out; /* Firefox */ -webkit-animation: myfirst 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: myfirst 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
+.ours-addr-img { position: relative; width: 204px; height: 204px; margin-top: 200px; margin-right: 100px; }
 
-.ours-city ul .atcive:after { content: ""; width: 40px; height: 40px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -20px 0 0 -20px; left: 50%; top: 50%; animation: mysen 1.5s ease-out; -moz-animation: mysen 1.5s ease-out; /* Firefox */ -webkit-animation: mysen 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: mysen 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
+.ours-addr-img li { width: 200px; height: 200px; border: 2px solid #f8f8f8; border-radius: 50%; }
 
+.ours-addr-img li span { font-size: 18px; position: absolute; top: 50%; left: -50px; display: block; width: 36px; margin-top: -9px; color: #fff; border-bottom: 2px solid #fff; }
+
+.ours-addr-img li img { width: 200px; height: 200px; border-radius: 50%; }
+
+/* 呼吸灯动画 */
 @keyframes mycolor { 0% { background-color: #e4e5e5; }
   100% { background-color: #fff; } }
 
 @keyframes myfirst { 0% { -webkit-transform: scale(0);
-    opacity: 0.0; }
+    opacity: .0; }
   25% { -webkit-transform: scale(0);
-    opacity: 0.1; }
+    opacity: .1; }
   50% { -webkit-transform: scale(0.1);
-    opacity: 0.3; }
+    opacity: .3; }
   75% { -webkit-transform: scale(0.5);
-    opacity: 0.5; }
+    opacity: .5; }
   100% { -webkit-transform: scale(1);
-    opacity: 0.0; } }
+    opacity: .0; } }
 
 @keyframes mysen { 0% { -webkit-transform: scale(0);
-    opacity: 0.0; }
+    opacity: .0; }
   25% { -webkit-transform: scale(0);
-    opacity: 0.1; }
+    opacity: .1; }
   50% { -webkit-transform: scale(0.1);
-    opacity: 0.3; }
+    opacity: .3; }
   75% { -webkit-transform: scale(0.5);
-    opacity: 0.5; }
+    opacity: .5; }
   100% { -webkit-transform: scale(1);
-    opacity: 0.0; } }
-
-.ours-city .ours-city-img li { width: 200px; height: 200px; border-radius: 50%; border: 2px solid #f8f8f8; }
-
-.ours-city .ours-city-img li span { position: absolute; top: 50%; left: -50px; font-size: 18px; color: #fff; margin-top: -9px; width: 36px; display: block; border-bottom: 2px solid #fff; }
-
-.ours-city .ours-city-img li img { width: 200px; height: 200px; border-radius: 50%; }
+    opacity: .0; } }

@@ -1,8 +1,10 @@
-@import "sass/header";
-@import "sass/footer";
-body{
+@import 'sass/header';
+@import 'sass/footer';
+body {
     min-width: 1310px;
 }
+
+
 /* banner */
 
 .banner {
@@ -16,12 +18,12 @@ body{
 .cnt {
     width: 100%;
     h2 {
-        height: 60px;
-        width: 160px;
-        margin: 0 auto 100px;
-        border-bottom: 2px solid #58DD00;
         font-size: 40px;
+        width: 160px;
+        height: 60px;
+        margin: 0 auto 100px;
         text-align: center;
+        border-bottom: 2px solid #58dd00;
     }
 }
 
@@ -30,14 +32,14 @@ body{
 
 .cnt-service {
     ul {
-        width: 100%;
         overflow: hidden;
+        width: 100%;
         li:first-child {
             margin-left: 0;
         }
         li {
-            width: 280px;
             float: left;
+            width: 280px;
             margin-left: 60px;
             img {
                 width: 280px;
@@ -45,17 +47,17 @@ body{
             }
             h3 {
                 font-size: 30px;
-                color: #666666;
-                text-align: center;
                 margin: 60px 0 30px;
+                text-align: center;
+                color: #666;
             }
             p {
-                padding: 0 10px;
                 font-size: 18px;
-                color: #999999;
-                text-align: center;
                 line-height: 28px;
+                padding: 0 10px;
+                text-align: center;
                 letter-spacing: 2px;
+                color: #999;
             }
         }
     }
@@ -65,27 +67,27 @@ body{
 /* 成果 */
 
 .cnt-result {
-    background-image: url("../images/home/bg-cg.png");
     text-align: center;
+    background-image: url('../images/home/bg-cg.png');
     h2 {
-        height: 60px;
-        width: 160px;
-        margin: 0 auto 50px;
-        border-bottom: 2px solid #58DD00;
         font-size: 40px;
+        width: 160px;
+        height: 60px;
+        margin: 0 auto 50px;
         text-align: center;
+        border-bottom: 2px solid #58dd00;
     }
     p {
         font-size: 18px;
-        color: #5f5f5f;
+        line-height: 28px;
         width: 1000px;
         margin: auto;
-        line-height: 28px;
+        color: #5f5f5f;
     }
     .result-show {
         img {
-            width: auto;
             display: block;
+            width: auto;
             margin: 60px auto 0;
         }
     }
@@ -99,18 +101,18 @@ body{
     overflow: hidden;
     & > img {
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
         z-index: -1;
+        top: 0;
+        right: 0;
+        left: 0;
     }
 }
 
 .ours-logo {
     height: 440px;
-    border-right: 1px solid #5f6964;
-    padding-top: 160px;
     margin-left: 50px;
+    padding-top: 160px;
+    border-right: 1px solid #5f6964;
     img {
         width: 160px;
         height: 160px;
@@ -125,181 +127,181 @@ body{
             color: #fff;
         }
         span {
+            display: block;
             width: 100%;
             height: 1px;
-            display: block;
-            background-color: #5f6964;
             margin: 30px 0;
+            background-color: #5f6964;
         }
         dd {
             font-size: 12px;
-            color: #fff;
             height: 30px;
+            color: #fff;
         }
     }
 }
 
-.ours-city {
-    margin-top: 200px;
-    // margin-right: 21.5%;
-    margin-left: 440px;
-    // margin-right: 102px;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    ul {
-        li {
-            border-radius: 50%;
-            width: 12px;
-            height: 12px;
-            position: absolute;
-            background-color: #e4e5e5;
-        }
-        li:hover {
+.ours-addr-node {
+    li {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 15px;
+        background-color: #e4e5e5;
+        &:hover {
             cursor: pointer;
         }
-        .addr-sz {
-            // bottom: 20%;
-            bottom: 14px;
-            // left: -98%;
-            left: -180px;
-        }
-        .addr-wh {
-            bottom: 46px;
-            left: -212px;
-        }
-        .addr-nj {
-            bottom: 78px;
-            left: -176px;
-        }
-        .addr-bj {
-            bottom: 100px;
-            left: -190px;
-        }
-        .atcive {
-            animation: macolor 1.5s ease-out;
-            animation-iteration-count: infinite;
-        }
-        .atcive:before {
-            content: "";
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            display: block;
-            background-color: rgba(255, 255, 255, 1);
-            position: absolute;
-            margin: -13px 0 0 -13px;
-            left: 50%;
-            top: 50%;
-            animation: myfirst 1.5s ease-out;
-            -moz-animation: myfirst 1.5s ease-out;
-            /* Firefox */
-            -webkit-animation: myfirst 1.5s ease-out;
-            /* Safari 和 Chrome */
-            -o-animation: myfirst 1.5s ease-out;
-            animation-iteration-count: infinite;
-            -moz-animation-iteration-count: infinite;
-            -webkit-animation-iteration-count: infinite;
-            -o-animation-iteration-count: infinite;
-        }
-        .atcive:after {
-            content: "";
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: block;
-            background-color: rgba(255, 255, 255, 1);
-            position: absolute;
-            margin: -20px 0 0 -20px;
-            left: 50%;
-            top: 50%;
-            animation: mysen 1.5s ease-out;
-            -moz-animation: mysen 1.5s ease-out;
-            /* Firefox */
-            -webkit-animation: mysen 1.5s ease-out;
-            /* Safari 和 Chrome */
-            -o-animation: mysen 1.5s ease-out;
-            animation-iteration-count: infinite;
-            -moz-animation-iteration-count: infinite;
-            -webkit-animation-iteration-count: infinite;
-            -o-animation-iteration-count: infinite;
-        }
-        /* 呼吸灯动画 */
-        @keyframes mycolor {
-            0% {
-                background-color: #e4e5e5;
-            }
-            100% {
-                background-color: #fff;
-            }
-        }
-        @keyframes myfirst {
-            0% {
-                -webkit-transform: scale(0);
-                opacity: 0.0;
-            }
-            25% {
-                -webkit-transform: scale(0);
-                opacity: 0.1;
-            }
-            50% {
-                -webkit-transform: scale(0.1);
-                opacity: 0.3;
-            }
-            75% {
-                -webkit-transform: scale(0.5);
-                opacity: 0.5;
-            }
-            100% {
-                -webkit-transform: scale(1);
-                opacity: 0.0;
-            }
-        }
-        @keyframes mysen {
-            0% {
-                -webkit-transform: scale(0);
-                opacity: 0.0;
-            }
-            25% {
-                -webkit-transform: scale(0);
-                opacity: 0.1;
-            }
-            50% {
-                -webkit-transform: scale(0.1);
-                opacity: 0.3;
-            }
-            75% {
-                -webkit-transform: scale(0.5);
-                opacity: 0.5;
-            }
-            100% {
-                -webkit-transform: scale(1);
-                opacity: 0.0;
-            }
-        }
     }
-    .ours-city-img {
-        li {
+    .addr-bj {
+        bottom: 100px;
+        left: -190px;
+    }
+    .addr-wh {
+        bottom: 46px;
+        left: -212px;
+    }
+    .addr-nj {
+        bottom: 78px;
+        left: -176px;
+    }
+    .addr-sz {
+        right: 41%;
+        bottom: 34%;
+    }
+    .atcive {
+        animation: macolor 1.5s ease-out;
+        animation-iteration-count: infinite;
+    }
+    .atcive:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 26px;
+        height: 26px;
+        margin: -13px 0 0 -13px;
+        content: '';
+        /* Firefox */
+        -webkit-animation: myfirst 1.5s ease-out;
+        -moz-animation: myfirst 1.5s ease-out;
+        /* Safari 和 Chrome */
+        -o-animation: myfirst 1.5s ease-out;
+        animation: myfirst 1.5s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .atcive:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: -20px 0 0 -20px;
+        content: '';
+        /* Firefox */
+        -webkit-animation: mysen 1.5s ease-out;
+        -moz-animation: mysen 1.5s ease-out;
+        /* Safari 和 Chrome */
+        -o-animation: mysen 1.5s ease-out;
+        animation: mysen 1.5s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.ours-addr-img {
+    position: relative;
+    width: 204px;
+    height: 204px;
+    margin-top: 200px;
+    margin-right: 100px;
+    li {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #f8f8f8;
+        border-radius: 50%;
+        span {
+            font-size: 18px;
+            position: absolute;
+            top: 50%;
+            left: -50px;
+            display: block;
+            width: 36px;
+            margin-top: -9px;
+            color: #fff;
+            border-bottom: 2px solid #fff;
+        }
+        img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            border: 2px solid #f8f8f8;
-            span {
-                position: absolute;
-                top: 50%;
-                left: -50px;
-                font-size: 18px;
-                color: #fff;
-                margin-top: -9px;
-                width: 36px;
-                display: block;
-                border-bottom: 2px solid #fff;
-            }
-            img {
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-            }
         }
+    }
+}
+
+
+/* 呼吸灯动画 */
+
+@keyframes mycolor {
+    0% {
+        background-color: #e4e5e5;
+    }
+    100% {
+        background-color: #fff;
+    }
+}
+
+@keyframes myfirst {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: .0;
+    }
+    25% {
+        -webkit-transform: scale(0);
+        opacity: .1;
+    }
+    50% {
+        -webkit-transform: scale(.1);
+        opacity: .3;
+    }
+    75% {
+        -webkit-transform: scale(.5);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: .0;
+    }
+}
+
+@keyframes mysen {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: .0;
+    }
+    25% {
+        -webkit-transform: scale(0);
+        opacity: .1;
+    }
+    50% {
+        -webkit-transform: scale(.1);
+        opacity: .3;
+    }
+    75% {
+        -webkit-transform: scale(.5);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: .0;
     }
 }
