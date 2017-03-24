@@ -68,25 +68,33 @@ body { min-width: 1310px; }
 
 .ours-city { margin-top: 200px; margin-left: 440px; position: relative; width: 200px; height: 200px; }
 
-.ours-city ul { /* 呼吸灯动画 */ }
+.ours-city .ours-city-img li { width: 200px; height: 200px; border-radius: 50%; border: 2px solid #f8f8f8; }
 
-.ours-city ul li { border-radius: 50%; width: 12px; height: 12px; position: absolute; background-color: #e4e5e5; }
+.ours-city .ours-city-img li span { position: absolute; top: 50%; left: -50px; font-size: 18px; color: #fff; margin-top: -9px; width: 36px; display: block; border-bottom: 2px solid #fff; }
 
-.ours-city ul li:hover { cursor: pointer; }
+.ours-city .ours-city-img li img { width: 200px; height: 200px; border-radius: 50%; }
 
-.ours-city ul .addr-sz { bottom: 14px; left: -180px; }
+.map { position: absolute; z-index: -1; height: 100%; }
 
-.ours-city ul .addr-wh { bottom: 46px; left: -212px; }
+.ours-city-node { /* 呼吸灯动画 */ }
 
-.ours-city ul .addr-nj { bottom: 78px; left: -176px; }
+.ours-city-node li { border-radius: 50%; width: 12px; height: 12px; position: absolute; background-color: #e4e5e5; }
 
-.ours-city ul .addr-bj { bottom: 100px; left: -190px; }
+.ours-city-node li:hover { cursor: pointer; }
 
-.ours-city ul .atcive { animation: macolor 1.5s ease-out; animation-iteration-count: infinite; }
+.ours-city-node .addr-sz { bottom: 34%; left: 58%; }
 
-.ours-city ul .atcive:before { content: ""; width: 26px; height: 26px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -13px 0 0 -13px; left: 50%; top: 50%; animation: myfirst 1.5s ease-out; -moz-animation: myfirst 1.5s ease-out; /* Firefox */ -webkit-animation: myfirst 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: myfirst 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
+.ours-city-node .addr-wh { bottom: 40%; left: 57%; }
 
-.ours-city ul .atcive:after { content: ""; width: 40px; height: 40px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -20px 0 0 -20px; left: 50%; top: 50%; animation: mysen 1.5s ease-out; -moz-animation: mysen 1.5s ease-out; /* Firefox */ -webkit-animation: mysen 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: mysen 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
+.ours-city-node .addr-nj { bottom: 44%; left: 59%; }
+
+.ours-city-node .addr-bj { bottom: 50%; left: 58%; }
+
+.ours-city-node .atcive { animation: macolor 1.5s ease-out; animation-iteration-count: infinite; }
+
+.ours-city-node .atcive:before { content: ""; width: 26px; height: 26px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -13px 0 0 -13px; left: 50%; top: 50%; animation: myfirst 1.5s ease-out; -moz-animation: myfirst 1.5s ease-out; /* Firefox */ -webkit-animation: myfirst 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: myfirst 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
+
+.ours-city-node .atcive:after { content: ""; width: 40px; height: 40px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -20px 0 0 -20px; left: 50%; top: 50%; animation: mysen 1.5s ease-out; -moz-animation: mysen 1.5s ease-out; /* Firefox */ -webkit-animation: mysen 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: mysen 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
 
 @keyframes mycolor { 0% { background-color: #e4e5e5; }
   100% { background-color: #fff; } }
@@ -112,9 +120,3 @@ body { min-width: 1310px; }
     opacity: 0.5; }
   100% { -webkit-transform: scale(1);
     opacity: 0.0; } }
-
-.ours-city .ours-city-img li { width: 200px; height: 200px; border-radius: 50%; border: 2px solid #f8f8f8; }
-
-.ours-city .ours-city-img li span { position: absolute; top: 50%; left: -50px; font-size: 18px; color: #fff; margin-top: -9px; width: 36px; display: block; border-bottom: 2px solid #fff; }
-
-.ours-city .ours-city-img li img { width: 200px; height: 200px; border-radius: 50%; }

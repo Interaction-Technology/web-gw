@@ -147,7 +147,40 @@ body{
     position: relative;
     width: 200px;
     height: 200px;
-    ul {
+   
+    .ours-city-img {
+        li {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 2px solid #f8f8f8;
+            span {
+                position: absolute;
+                top: 50%;
+                left: -50px;
+                font-size: 18px;
+                color: #fff;
+                margin-top: -9px;
+                width: 36px;
+                display: block;
+                border-bottom: 2px solid #fff;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+    }
+    
+}
+.map{
+        position: absolute; 
+        z-index: -1;
+        height: 100%;
+    }
+     .ours-city-node {
+         
         li {
             border-radius: 50%;
             width: 12px;
@@ -159,22 +192,20 @@ body{
             cursor: pointer;
         }
         .addr-sz {
-            // bottom: 20%;
-            bottom: 14px;
-            // left: -98%;
-            left: -180px;
+                bottom: 34%;
+    left: 58%;
         }
         .addr-wh {
-            bottom: 46px;
-            left: -212px;
+                bottom: 40%;
+    left: 57%;
         }
         .addr-nj {
-            bottom: 78px;
-            left: -176px;
+             bottom: 44%;
+    left: 59%;
         }
         .addr-bj {
-            bottom: 100px;
-            left: -190px;
+           bottom: 50%;
+    left: 58%;
         }
         .atcive {
             animation: macolor 1.5s ease-out;
@@ -278,28 +309,3 @@ body{
             }
         }
     }
-    .ours-city-img {
-        li {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            border: 2px solid #f8f8f8;
-            span {
-                position: absolute;
-                top: 50%;
-                left: -50px;
-                font-size: 18px;
-                color: #fff;
-                margin-top: -9px;
-                width: 36px;
-                display: block;
-                border-bottom: 2px solid #fff;
-            }
-            img {
-                width: 200px;
-                height: 200px;
-                border-radius: 50%;
-            }
-        }
-    }
-}
