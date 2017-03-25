@@ -1,5 +1,7 @@
 @charset "UTF-8";
+
 /* 头部 */
+
 header,
 .header {
     width: 100%;
@@ -17,7 +19,7 @@ header,
     height: 32px;
     display: block;
     background-image: url(../images/logo/logo.png);
-    a{
+    a {
         display: inline-block;
         width: 142px;
         height: 32px;
@@ -31,7 +33,7 @@ nav {
         overflow: hidden;
         li {
             float: left;
-            margin-right: 60px;
+            margin-left: 60px;
             a {
                 color: #999;
                 font-size: 14px;
@@ -46,13 +48,6 @@ nav {
             line-height: 32px;
             border-radius: 15px;
             color: #fff;
-        }
-        .share {
-            a {
-                width: 20px;
-                height: 20px;
-                background-color: gold;
-            }
         }
     }
 }
