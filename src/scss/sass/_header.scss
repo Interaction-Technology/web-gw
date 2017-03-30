@@ -29,7 +29,7 @@ nav {
         overflow: hidden;
         li {
             float: left;
-            margin-right: 60px;
+            margin-left: 60px;
             a {
                 color: #999;
                 font-size: 14px;
@@ -45,13 +45,6 @@ nav {
             border-radius: 15px;
             color: #070200;
         }
-        .share {
-            a {
-                width: 20px;
-                height: 20px;
-                background-color: gold;
-            }
-        }
     }
 }
 .cooperation {
@@ -65,15 +58,15 @@ nav {
     margin-left: -420px;
     z-index: 2;
     border-radius: 10px;
-    .close{
-        background-image: url(../images/home/colse.png);
+    .close {
+        background-image: url("../images/home/colse.png");
         width: 16px;
         height: 16px;
         display: block;
         float: right;
-        margin: 30px 30px;
+        margin: 30px;
     }
-    .close:hover{
+    .close:hover {
         cursor: pointer;
     }
     h1 {
@@ -106,13 +99,13 @@ nav {
             display: inline-block;
             background-image: url("../images/home/map-erweima.png");
         }
-        .coo-qq-icon{
-             width: 14px;
-             height: 14px;
-             display: inline-block;
-             top: 2px;
-             position: relative;
-             background-image: url("../images/home/coo-qq.png");
+        .coo-qq-icon {
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            top: 2px;
+            position: relative;
+            background-image: url("../images/home/coo-qq.png");
         }
     }
     .coo-right {
@@ -159,7 +152,7 @@ nav {
                 line-height: 2;
                 color: #999;
             }
-            button{
+            button {
                 width: 350px;
                 float: right;
                 height: 48px;
@@ -168,20 +161,20 @@ nav {
                 color: #070200;
                 background-color: #eeff01;
                 border: none;
-                border-radius:2px ;
-                 outline: none;
+                border-radius: 2px;
+                outline: none;
             }
-            button:hover{
+            button:hover {
                 cursor: pointer;
             }
         }
         .text-box {
             height: 80px;
         }
-        .text-text{
+        .text-text {
             height: 40px;
         }
-        .sumbit{
+        .sumbit {
             height: 48px;
         }
     }

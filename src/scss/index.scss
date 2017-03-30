@@ -1,20 +1,15 @@
 @import "sass/header";
 @import "sass/footer";
+@import "sass/share";
 body {
     min-width: 1310px;
 }
-
-
 /* banner */
-
 .banner {
     width: 100%;
     height: auto;
 }
-
-
 /* 主体 */
-
 .cnt {
     width: 100%;
     h2 {
@@ -26,10 +21,7 @@ body {
         text-align: center;
     }
 }
-
-
 /* 服务 */
-
 .cnt-service {
     ul {
         width: 100%;
@@ -62,10 +54,7 @@ body {
         }
     }
 }
-
-
 /* 成果 */
-
 .cnt-result {
     background-image: url("../images/home/bg-cg.png");
     text-align: center;
@@ -92,10 +81,7 @@ body {
         }
     }
 }
-
-
 /* 我们 */
-
 .cnt-ours {
     position: relative;
     overflow: hidden;
@@ -105,7 +91,6 @@ body {
         height: 100%;
     }
 }
-
 .ours-logo {
     height: 440px;
     border-right: 1px solid #5f6964;
@@ -116,7 +101,6 @@ body {
         height: 160px;
     }
 }
-
 .ours-addr-info {
     margin: 136px 0 0 50px;
     dl {
@@ -134,11 +118,15 @@ body {
         dd {
             font-size: 12px;
             color: #fff;
-            height: 30px;
+            margin-bottom: 17px;
+            img {
+                margin-top: 30px;
+                width: 140px;
+                height: 140px;
+            }
         }
     }
 }
-
 .ours-addr-img {
     margin-top: 200px;
     margin-right: 102px;
@@ -168,7 +156,6 @@ body {
         }
     }
 }
-
 .ours-addr-node {
     li {
         border-radius: 50%;
@@ -245,10 +232,7 @@ body {
         -o-animation-iteration-count: infinite;
     }
 }
-
-
 /* 呼吸灯动画 */
-
 @keyframes mycolor {
     0% {
         background-color: #e4e5e5;
@@ -257,7 +241,6 @@ body {
         background-color: #fff;
     }
 }
-
 @keyframes myfirst {
     0% {
         -webkit-transform: scale(0);
@@ -280,7 +263,6 @@ body {
         opacity: 0.0;
     }
 }
-
 @keyframes mysen {
     0% {
         -webkit-transform: scale(0);
@@ -303,4 +285,3 @@ body {
         opacity: 0.0;
     }
 }
-

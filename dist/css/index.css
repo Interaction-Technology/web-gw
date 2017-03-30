@@ -8,17 +8,15 @@ header, .header { width: 100%; height: 62px; position: fixed; top: 0; left: 0; b
 
 nav ul { display: inline-block; line-height: 60px; overflow: hidden; }
 
-nav ul li { float: left; margin-right: 60px; }
+nav ul li { float: left; margin-left: 60px; }
 
 nav ul li a { color: #999; font-size: 14px; }
 
 nav ul .collaboration { display: inline-block; width: 108px; background-color: #eeff01; text-align: center; height: 32px; line-height: 32px; border-radius: 15px; color: #070200; }
 
-nav ul .share a { width: 20px; height: 20px; background-color: gold; }
-
 .cooperation { display: none; width: 840px; height: 500px; background-color: #fff; position: fixed; top: 256px; left: 50%; margin-left: -420px; z-index: 2; border-radius: 10px; }
 
-.cooperation .close { background-image: url(../images/home/colse.png); width: 16px; height: 16px; display: block; float: right; margin: 30px 30px; }
+.cooperation .close { background-image: url("../images/home/colse.png"); width: 16px; height: 16px; display: block; float: right; margin: 30px; }
 
 .cooperation .close:hover { cursor: pointer; }
 
@@ -67,6 +65,29 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 
 .map-erweima { width: 140px; height: 140px !important; display: inline-block; background-image: url(../images/home/map-erweima.png); }
 
+/* 右侧浮动弹窗 */
+.share { position: fixed; right: 50px; bottom: 162px; width: 36px; height: 152px; color: #fff; }
+
+.share li { position: relative; display: block; width: 36; height: 36px; margin-bottom: 1px; }
+
+.share li dl { position: absolute; left: -224px; width: 220px; border-radius: 4px; background-color: #fff; }
+
+.share li dl dt { font-size: 14px; line-height: 56px; height: 56px; padding: 0 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+
+.share li dl dd { padding-left: 20px; padding-right: 20px; }
+
+.telephone dl { top: 0; }
+
+.telephone dl dd { line-height: 41px; height: 41px; text-align: left; border-top: 1px solid #f7f7f7; }
+
+.share-WeChat dl { top: -320px; }
+
+.share-WeChat dl dd { text-align: center; padding: 20px 0; }
+
+.share-WeChat dl dd img { width: 120px; height: 120px; margin: 0 auto 20px; }
+
+.share-WeChat dl dd p { font-weight: 500; }
+
 body { min-width: 1310px; }
 
 /* banner */
@@ -114,7 +135,9 @@ body { min-width: 1310px; }
 
 .ours-addr-info dl span { width: 100%; height: 1px; display: block; background-color: #5f6964; margin: 30px 0; }
 
-.ours-addr-info dl dd { font-size: 12px; color: #fff; height: 30px; }
+.ours-addr-info dl dd { font-size: 12px; color: #fff; margin-bottom: 17px; }
+
+.ours-addr-info dl dd img { margin-top: 30px; width: 140px; height: 140px; }
 
 .ours-addr-img { margin-top: 200px; margin-right: 102px; position: relative; width: 200px; height: 200px; }
 
