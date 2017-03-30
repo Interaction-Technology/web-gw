@@ -9,21 +9,19 @@ header,
     left: 0;
     background-color: rgba(0, 0, 0, .2);
 }
-
 .logo {
     margin-top: 15px;
     float: left;
     width: 142px;
     height: 32px;
     display: block;
-    background-image: url(../images/logo/logo.png);
-    a{
+    background-image: url("../images/logo/logo.png");
+    a {
         display: inline-block;
         width: 142px;
         height: 32px;
     }
 }
-
 nav {
     ul {
         display: inline-block;
@@ -40,12 +38,12 @@ nav {
         .collaboration {
             display: inline-block;
             width: 108px;
-            background-color: #58dd00;
+            background-color: #eeff01;
             text-align: center;
             height: 32px;
             line-height: 32px;
             border-radius: 15px;
-            color: #fff;
+            color: #070200;
         }
         .share {
             a {
@@ -53,6 +51,138 @@ nav {
                 height: 20px;
                 background-color: gold;
             }
+        }
+    }
+}
+.cooperation {
+    display: none;
+    width: 840px;
+    height: 500px;
+    background-color: #fff;
+    position: fixed;
+    top: 256px;
+    left: 50%;
+    margin-left: -420px;
+    z-index: 2;
+    border-radius: 10px;
+    .close{
+        background-image: url(../images/home/colse.png);
+        width: 16px;
+        height: 16px;
+        display: block;
+        float: right;
+        margin: 30px 30px;
+    }
+    .close:hover{
+        cursor: pointer;
+    }
+    h1 {
+        height: 80px;
+        background: #eeff01;
+        border-radius: 10px 10px 0 0;
+        font-size: 24px;
+        color: #070200;
+        line-height: 80px;
+        padding-left: 60px;
+    }
+    ul {
+        p {
+            font-size: 18px;
+            color: #666;
+        }
+        padding: 40px 0 0 60px;
+        height: 380px;
+    }
+    .coo-left {
+        width: 240px;
+        background-color: #fafafa;
+        border-radius: 0 0 0 10px;
+        li {
+            margin-top: 26px;
+        }
+        .coo-erweima {
+            width: 140px;
+            height: 140px !important;
+            display: inline-block;
+            background-image: url("../images/home/map-erweima.png");
+        }
+        .coo-qq-icon{
+             width: 14px;
+             height: 14px;
+             display: inline-block;
+             top: 2px;
+             position: relative;
+             background-image: url("../images/home/coo-qq.png");
+        }
+    }
+    .coo-right {
+        border-radius: 0 0 10px 0;
+        p {
+            margin-bottom: 20px;
+        }
+        li {
+            height: 44px;
+            line-height: 44px;
+            overflow: hidden;
+            span {
+                color: #666;
+                font-size: 14px;
+                width: 100px;
+                text-align: right;
+                height: 34px;
+                display: inline-block;
+                float: left;
+            }
+            input {
+                height: 30px;
+                width: 340px;
+                border: none;
+                border: 1px solid #ebebeb;
+                display: inline-block;
+                padding-left: 4px;
+                outline: none;
+            }
+            textarea {
+                width: 340px;
+                border: none;
+                border: 1px solid #ebebeb;
+                display: inline-block;
+                height: 60px;
+                margin-top: 10px;
+                padding: 4px;
+                outline: none;
+            }
+            .xuqiu {
+                float: right;
+                width: 340px;
+                padding-right: 4px;
+                line-height: 2;
+                color: #999;
+            }
+            button{
+                width: 350px;
+                float: right;
+                height: 48px;
+                line-height: 48px;
+                font-size: 16px;
+                color: #070200;
+                background-color: #eeff01;
+                border: none;
+                border-radius:2px ;
+                 outline: none;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+        }
+        .text-box {
+            height: 80px;
+        }
+        .text-text{
+            height: 40px;
+        }
+        .sumbit{
+            height: 48px;
         }
     }
 }
