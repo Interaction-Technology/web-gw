@@ -3,16 +3,26 @@
 .share {
     position: fixed;
     right: 50px;
-    bottom: 162px;
+    bottom: 222px;
     width: 36px;
     height: 152px;
     color: #fff;
+    z-index: 1;
+    
     li {
         position: relative;
         display: block;
         width: 36;
         height: 36px;
         margin-bottom: 1px;
+        line-height: 46px;
+        text-align: center;
+    img{
+        width: auto;
+        height: auto;
+        display: inline-block;
+        
+    }
         dl {
             position: absolute;
             left: -224px;
@@ -28,12 +38,16 @@
                 padding: 0 20px;
                 border-top-left-radius: 4px;
                 border-top-right-radius: 4px;
+                text-align: left;
             }
             dd {
                 padding-left: 20px;
                 padding-right: 20px;
             }
         }
+    }
+    li:hover{
+        cursor: pointer;
     }
 }
 
@@ -45,24 +59,49 @@
             height: 41px;
             text-align: left;
             border-top: 1px solid #f7f7f7;
+            .t-tell{
+                background-image: url(../images/home/tell-tell.png);
+                width: 13px;
+                height: 13px;
+                display: block;
+                margin: 14px 10px 0 0 ;
+            }
+            .t-phone{
+                 background-image: url(../images/home/tell-phone.png);
+                width: 10px;
+                height: 14px;
+                display: block;
+                margin: 14px 10px 0 2px ;
+            }
         }
     }
 }
 
 .share-WeChat {
     dl {
-        top: -320px;
+        top: 0;
         dd {
             text-align: center;
-            padding: 20px 0;
+            padding: 20px 0 0 0;
             img {
                 width: 120px;
                 height: 120px;
-                margin: 0 auto 20px;
+                margin: auto;
+                display: block;
             }
             p {
                 font-weight: 500;
             }
         }
     }
+}
+.r-w-win,.r-t-win{
+display: none;
+}
+.w-close{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-image: url(../images/home/w-colse.png);
+    margin-top: 22px;
 }

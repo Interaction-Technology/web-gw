@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* 头部 */
-header, .header { width: 100%; height: 62px; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.2); }
+header, .header { width: 100%; height: 62px; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.8); }
 
 .logo { margin-top: 15px; float: left; width: 142px; height: 32px; display: block; background-image: url("../images/logo/logo.png"); }
 
@@ -66,27 +66,39 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 .map-erweima { width: 140px; height: 140px !important; display: inline-block; background-image: url(../images/home/map-erweima.png); }
 
 /* 右侧浮动弹窗 */
-.share { position: fixed; right: 50px; bottom: 162px; width: 36px; height: 152px; color: #fff; }
+.share { position: fixed; right: 50px; bottom: 222px; width: 36px; height: 152px; color: #fff; z-index: 1; }
 
-.share li { position: relative; display: block; width: 36; height: 36px; margin-bottom: 1px; }
+.share li { position: relative; display: block; width: 36; height: 36px; margin-bottom: 1px; line-height: 46px; text-align: center; }
+
+.share li img { width: auto; height: auto; display: inline-block; }
 
 .share li dl { position: absolute; left: -224px; width: 220px; border-radius: 4px; background-color: #fff; }
 
-.share li dl dt { font-size: 14px; line-height: 56px; height: 56px; padding: 0 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+.share li dl dt { font-size: 14px; line-height: 56px; height: 56px; padding: 0 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; text-align: left; }
 
 .share li dl dd { padding-left: 20px; padding-right: 20px; }
+
+.share li:hover { cursor: pointer; }
 
 .telephone dl { top: 0; }
 
 .telephone dl dd { line-height: 41px; height: 41px; text-align: left; border-top: 1px solid #f7f7f7; }
 
-.share-WeChat dl { top: -320px; }
+.telephone dl dd .t-tell { background-image: url(../images/home/tell-tell.png); width: 13px; height: 13px; display: block; margin: 14px 10px 0 0; }
 
-.share-WeChat dl dd { text-align: center; padding: 20px 0; }
+.telephone dl dd .t-phone { background-image: url(../images/home/tell-phone.png); width: 10px; height: 14px; display: block; margin: 14px 10px 0 2px; }
 
-.share-WeChat dl dd img { width: 120px; height: 120px; margin: 0 auto 20px; }
+.share-WeChat dl { top: 0; }
+
+.share-WeChat dl dd { text-align: center; padding: 20px 0 0 0; }
+
+.share-WeChat dl dd img { width: 120px; height: 120px; margin: auto; display: block; }
 
 .share-WeChat dl dd p { font-weight: 500; }
+
+.r-w-win, .r-t-win { display: none; }
+
+.w-close { width: 12px; height: 12px; display: inline-block; background-image: url(../images/home/w-colse.png); margin-top: 22px; }
 
 body { min-width: 1310px; }
 
