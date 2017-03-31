@@ -1,66 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>首页</title>
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
 
-<body>
-    <!-- top -->
-    @@include("header.html")
-    <!-- banner -->
-    <div class="banner">
-        <img src="images/home/bananer.png" alt="bannner">
-    </div>
-    <!-- content -->
-    <div class="cnt cnt-service pb100">
-        <div class="w1300">
-            <h2 class="pt80">服务</h2>
-            <ul>
-                <li>
-                    <img src="images/home/web.png" alt="网站设计及开发">
-                    <h3>网站设计及开发</h3>
-                    <p>为用户提供专业化、品牌化的网站界面设计、网站策划、网站建设与研发等</p>
-                </li>
-                <li>
-                    <img src="images/home/ui.png" alt="移动设备设计">
-                    <h3>移动设备设计</h3>
-                    <p>为平板电脑、手机、家电设备、车载系统等移动终端提供完善的品牌化用户界面设计</p>
-                </li>
-                <li>
-                    <img src="images/home/video.png" alt="视频动画">
-                    <h3>视频动画</h3>
-                    <p>针对宣传视频、H5页面、交互动效、卡通动漫等，进行专业化设计与制作</p>
-                </li>
-                <li>
-                    <img src="images/home/inde.png" alt="个性化设计">
-                    <h3>个性化设计</h3>
-                    <p>提供品牌形象设计、吉祥物设计、主题图标设计等个性化定制与服务</p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="cnt  cnt-result bac-gry">
-        <div class="w1300">
-            <h2 class="pt80">成果</h2>
-            <p>力科威尔是从事网络摄像机研发、生产、销售和服务为一体的专业OEM/ODM厂商，是一款智能家居产品，在出差或工作过程中对于家的把控的设计。整体采用企业绿色，以简洁舒适为主要思想，主张重点展示有用信息.</p>
-            <div class="result-show">
-                <img src="images/home/webpoj.png">
-            </div>
-        </div>
-    </div>
-    <div class="cnt cnt-partner pb100">
-        <div class="w1300">
-            <h2 class="pt80">合作伙伴</h2>
-            <img src="images/home/hezuo.png" alt="合作伙伴">
-        </div>
-    </div>
-    @@include("share.html")
-    <!-- footer -->
-    @@include("footer.html")
-</body>
- 
+	</head>
+
+	<body>
+		<!-- top -->
+		@@include("header.html")
+		<!-- banner -->
+		<div class="banner" id="banner">
+			<!--<img class="ban"  src="images/home/bananer.png" alt="bannner">-->
+			<span>
+        <i class="red-png"></i>
+        <i class="blue-one-png"></i>
+        <i class="blue-two-png"></i>
+        <i class="green-png"></i>
+        <i class="yellow-png"></i>
+       </span>
+			<span id="bankImages">
+        	<img class="ban-top-1" src="images/gif/top1.png">
+        	<img class="ban-top-2" src="images/gif/top2.png">
+        	<img class="ban-butt-1" src="images/gif/bott1.png">
+        	<img class="ban-butt-2" src="images/gif/bott2.png">
+        	<img class="ban-text" src="images/gif/text.png">        	 
+        </span>
+		</div>
+		<!-- content -->
+		<div class="cnt cnt-service pb100" id="fuwu">
+			<div class="w1300">
+				<h2>服务</h2>
+				<ul>
+					<li>
+						<img src="images/home/web.png" alt="网站设计及开发">
+						<h3>网站设计及开发</h3>
+						<p>为用户提供专业化、品牌化的网站界面设计、网站策划、网站建设与研发等</p>
+					</li>
+					<li>
+						<img src="images/home/ui.png" alt="移动设备设计">
+						<h3>移动设备设计</h3>
+						<p>为平板电脑、手机、家电设备、车载系统等移动终端提供完善的品牌化用户界面设计</p>
+					</li>
+					<li>
+						<img src="images/home/video.png" alt="视频动画">
+						<h3>视频动画</h3>
+						<p>针对宣传视频、H5页面、交互动效、卡通动漫等，进行专业化设计与制作</p>
+					</li>
+					<li>
+						<img src="images/home/inde.png" alt="个性化设计">
+						<h3>个性化设计</h3>
+						<p>提供品牌形象设计、吉祥物设计、主题图标设计等个性化定制与服务</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="carousel-example-generic" class="carousel slide cnt cnt-result bac-gry" data-ride="carousel">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner w1300" role="listbox">
+				<h2>成果</h2>
+				<div class="item active">
+					<p>力科威尔是从事网络摄像机研发、生产、销售和服务为一体的专业OEM/ODM厂商，是一款智能家居产品，在出差或工作过程中对于家的把控的设计。整体采用企业绿色，以简洁舒适为主要思想，主张重点展示有用信息.</p>
+					<div class="result-show">
+						<img src="images/home/webpoj.png">
+					</div>
+				</div>
+				<div class="item">
+					<img src="" alt="">
+					<div class="carousel-caption">
+				
+					</div>
+				</div>
+			</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				<img class="left-icon" src="images/home/left.png">
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				<img class="right-icon" src="images/home/right.png">
+			</a>
+		</div>
+
+		<div class="cnt cnt-partner pb100">
+			<div class="w1300">
+				<h2>合作伙伴</h2>
+				<img src="images/home/hezuo.png" alt="合作伙伴">
+			</div>
+		</div>
+		@@include("share.html")
+		<!-- footer -->
+		@@include("footer.html")
+	</body>
+
 </html>

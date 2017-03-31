@@ -7,19 +7,14 @@
     width: 36px;
     height: 152px;
     color: #fff;
-<<<<<<< HEAD
-    z-index: 1;
-    
-=======
-    z-index: 99;
->>>>>>> a80700f9a025cd923feed7624bdf6ad13a7fc548
+    z-index: 1;    
     li {
         position: relative;
         display: block;
-        width: 36;
+        width: 36px;
         height: 36px;
         margin-bottom: 1px;
-        line-height: 46px;
+        line-height: 36px;
         text-align: center;
     img{
         width: auto;
@@ -86,7 +81,7 @@
         top: 0;
         dd {
             text-align: center;
-            padding: 20px 0 0 0;
+            padding: 20px 0 10px 0;
             img {
                 width: 120px;
                 height: 120px;
