@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* 头部 */
+header, .header { width: 100%; height: 62px; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 1; }
+
+.logo { margin-top: 15px; float: left; width: 142px; height: 32px; display: block; background-image: url("../images/logo/logo.png"); }
+
+.logo a { display: inline-block; width: 142px; height: 32px; }
+
+nav ul { display: inline-block; line-height: 60px; overflow: hidden; }
+
+nav ul li { float: left; margin-left: 60px; }
+
+nav ul li a { color: #999; font-size: 14px; }
+
+nav ul li a:hover { text-decoration: none; color: #eeff01; }
+
+nav ul .nav-ate a { color: #eeff01; }
+
+nav ul .nav-ate:after { content: ""; width: 100%; height: 2px; background-color: #eeff01; display: block; position: relative; bottom: 14px; }
+
+nav ul .collaboration { display: inline-block; width: 108px; background-color: #eeff01; text-align: center; height: 32px; line-height: 32px; border-radius: 15px; color: #070200; }
+
+nav ul .collaboration:hover { color: #000; cursor: pointer; }
+
+.cooperation { display: none; width: 840px; height: 500px; background-color: #fff; position: fixed; top: 256px; left: 50%; margin-left: -420px; z-index: 2; border-radius: 10px; }
+
+.cooperation .close { background-image: url("../images/home/colse.png"); width: 16px; height: 16px; display: block; float: right; margin: 30px; }
+
+.cooperation .close:hover { cursor: pointer; }
+
+.cooperation h1 { height: 80px; background: #eeff01; border-radius: 10px 10px 0 0; font-size: 24px; color: #070200; line-height: 80px; padding-left: 60px; }
+
+.cooperation ul { padding: 40px 0 0 60px; height: 380px; }
+
+.cooperation ul p { font-size: 18px; color: #666; }
+
+.cooperation .coo-left { width: 240px; background-color: #fafafa; border-radius: 0 0 0 10px; }
+
+.cooperation .coo-left li { margin-top: 26px; }
+
+.cooperation .coo-left .coo-erweima { width: 140px; height: 140px !important; display: inline-block; background-image: url("../images/home/map-erweima.png"); }
+
+.cooperation .coo-left .coo-qq-icon { width: 14px; height: 14px; display: inline-block; top: 2px; position: relative; background-image: url("../images/home/coo-qq.png"); }
+
+.cooperation .coo-right { border-radius: 0 0 10px 0; }
+
+.cooperation .coo-right p { margin-bottom: 20px; }
+
+.cooperation .coo-right li { height: 44px; line-height: 44px; overflow: hidden; }
+
+.cooperation .coo-right li span { color: #666; font-size: 14px; width: 100px; text-align: right; height: 34px; display: inline-block; float: left; }
+
+.cooperation .coo-right li input { height: 30px; width: 340px; border: none; border: 1px solid #ebebeb; display: inline-block; padding-left: 4px; outline: none; }
+
+.cooperation .coo-right li textarea { width: 340px; border: none; border: 1px solid #ebebeb; display: inline-block; height: 60px; margin-top: 10px; padding: 4px; outline: none; }
+
+.cooperation .coo-right li .xuqiu { float: right; width: 340px; padding-right: 4px; line-height: 2; color: #999; }
+
+.cooperation .coo-right li button { width: 350px; float: right; height: 48px; line-height: 48px; font-size: 16px; color: #070200; background-color: #eeff01; border: none; border-radius: 2px; outline: none; }
+
+.cooperation .coo-right li button:hover { cursor: pointer; }
+
+.cooperation .coo-right .text-box { height: 80px; }
+
+.cooperation .coo-right .text-text { height: 40px; }
+
+.cooperation .coo-right .sumbit { height: 48px; }
+
+/* 底部 */
+footer .info { height: 50px; text-align: center; line-height: 50px; color: #414040; }
+
+.map-qq i { position: relative; top: 3px; width: 14px; height: 14px; display: inline-block; background-image: url(../images/home/map-qq.png); }
+
+.map-erweima { width: 140px; height: 140px !important; display: inline-block; background-image: url(../images/home/map-erweima.png); }
+
+/* 右侧浮动弹窗 */
+.share { display: none; position: fixed; right: 50px; bottom: 222px; width: 36px; height: 152px; color: #fff; z-index: 1; }
+
+.share li { position: relative; display: block; width: 36px; height: 36px; margin-bottom: 1px; line-height: 36px; text-align: center; }
+
+.share li img { width: auto; height: auto; display: inline-block; }
+
+.share li dl { position: absolute; left: -224px; width: 220px; border-radius: 4px; background-color: #fff; }
+
+.share li dl dt { font-size: 14px; line-height: 56px; height: 56px; padding: 0 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; text-align: left; }
+
+.share li dl dd { padding-left: 20px; padding-right: 20px; }
+
+.share li:hover { cursor: pointer; }
+
+.telephone dl { top: 0; }
+
+.telephone dl dd { line-height: 41px; height: 41px; text-align: left; border-top: 1px solid #f7f7f7; }
+
+.telephone dl dd .t-tell { background-image: url(../images/home/tell-tell.png); width: 13px; height: 13px; display: block; margin: 14px 10px 0 0; }
+
+.telephone dl dd .t-phone { background-image: url(../images/home/tell-phone.png); width: 10px; height: 14px; display: block; margin: 14px 10px 0 2px; }
+
+.share-WeChat dl { top: 0; }
+
+.share-WeChat dl dd { text-align: center; padding: 20px 0 10px 0; }
+
+.share-WeChat dl dd img { width: 120px; height: 120px; margin: auto; display: block; }
+
+.share-WeChat dl dd p { font-weight: 500; }
+
+.r-w-win, .r-t-win { display: none; }
+
+.w-close { width: 12px; height: 12px; display: inline-block; background-image: url(../images/home/w-colse.png); margin-top: 22px; }

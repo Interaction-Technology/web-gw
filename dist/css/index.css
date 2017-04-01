@@ -12,7 +12,15 @@ nav ul li { float: left; margin-left: 60px; }
 
 nav ul li a { color: #999; font-size: 14px; }
 
+nav ul li a:hover { text-decoration: none; color: #eeff01; }
+
+nav ul .nav-ate a { color: #eeff01; }
+
+nav ul .nav-ate:after { content: ""; width: 100%; height: 2px; background-color: #eeff01; display: block; position: relative; bottom: 14px; }
+
 nav ul .collaboration { display: inline-block; width: 108px; background-color: #eeff01; text-align: center; height: 32px; line-height: 32px; border-radius: 15px; color: #070200; }
+
+nav ul .collaboration:hover { color: #000; cursor: pointer; }
 
 .cooperation { display: none; width: 840px; height: 500px; background-color: #fff; position: fixed; top: 256px; left: 50%; margin-left: -420px; z-index: 2; border-radius: 10px; }
 
@@ -66,7 +74,7 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 .map-erweima { width: 140px; height: 140px !important; display: inline-block; background-image: url(../images/home/map-erweima.png); }
 
 /* 右侧浮动弹窗 */
-.share { position: fixed; right: 50px; bottom: 222px; width: 36px; height: 152px; color: #fff; z-index: 1; }
+.share { display: none; position: fixed; right: 50px; bottom: 222px; width: 36px; height: 152px; color: #fff; z-index: 1; }
 
 .share li { position: relative; display: block; width: 36px; height: 36px; margin-bottom: 1px; line-height: 36px; text-align: center; }
 
@@ -124,6 +132,8 @@ body { min-width: 1310px; }
 .banner .green-png { width: 62px; height: 72px; display: block; background-image: url(../images/gif/green.png); position: absolute; top: 50%; right: 20%; animation: ban 2s ease-out; animation-iteration-count: infinite; }
 
 .banner .yellow-png { width: 34px; height: 40px; display: block; background-image: url(../images/gif/yellow.png); position: absolute; top: 50%; left: 20%; animation: ban 2s ease-out; animation-iteration-count: infinite; }
+
+.banner .banner-gif, .banner .banner-gif2 { width: 100%; height: 100%; transition: all 0.2s ease-out; position: absolute; }
 
 @keyframes ban { 0% { transform: rotateY(0deg); }
   20% { transform: rotateY(60deg); }

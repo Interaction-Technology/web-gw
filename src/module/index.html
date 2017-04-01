@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>首页</title>
-
+		@@include("css-1.html")
 	</head>
 
 	<body>
@@ -13,19 +13,21 @@
 		<!-- banner -->
 		<div class="banner" id="banner">
 			<!--<img class="ban"  src="images/home/bananer.png" alt="bannner">-->
-			<span>
-        <i class="red-png"></i>
-        <i class="blue-one-png"></i>
-        <i class="blue-two-png"></i>
-        <i class="green-png"></i>
-        <i class="yellow-png"></i>
+		<span>
+	        <i class="red-png"></i>
+	        <i class="blue-one-png"></i>
+	        <i class="blue-two-png"></i>
+	        <i class="green-png"></i>
+	        <i class="yellow-png"></i>
        </span>
-			<span id="bankImages">
+	   <span class="banner-gif" id="banner-gif">
         	<img class="ban-top-1" src="images/gif/top1.png">
         	<img class="ban-top-2" src="images/gif/top2.png">
         	<img class="ban-butt-1" src="images/gif/bott1.png">
-        	<img class="ban-butt-2" src="images/gif/bott2.png">
-        	<img class="ban-text" src="images/gif/text.png">        	 
+        	<img class="ban-butt-2" src="images/gif/bott2.png">      	      	 
+        </span>
+			<span class="banner-gif2" id="banner-gif2">
+        	<img class="ban-text" src="images/gif/text.png">  
         </span>
 		</div>
 		<!-- content -->
@@ -70,7 +72,7 @@
 				<div class="item">
 					<img src="" alt="">
 					<div class="carousel-caption">
-				
+
 					</div>
 				</div>
 			</div>
@@ -93,6 +95,7 @@
 		@@include("share.html")
 		<!-- footer -->
 		@@include("footer.html")
+		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 
 </html>

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import "sass/header";
+@import "sass/footer";
+@import "sass/share";
+.sre-cnt{
+    background-color: #f0f0f0;
+    width: 100%;
+    height: auto;
+    .w1300{
+        background-color: #fff;
+        position: relative;
+        top: -100px;
+    }
+    .facion-ser{
+        padding-top: 80px;
+        h1{
+            font-size: 40px;
+            color: #666;
+            text-align: center;
+          
+        }
+        ul{
+            width: 1220px;
+            overflow: hidden;
+            margin: 60px 40px 0 40px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 50px;
+          li{
+            width: 290px;
+            height: 500px;
+            margin-left: 20px;
+            float: left;
+            text-align: center;
+            background-color: #fafafa;
+            img{
+                width: auto;
+                height: auto;
+                display: block;
+                margin:30px auto;
+            }
+            dl dt{
+                font-weight: normal;
+                font-size: 24px;
+                color: #666;
+                margin: 34px 0 12px 0;
+            }
+            dl dd{
+                margin-top: 14px;
+                font-size: 14px;
+                color: #999;
+            }
+        } 
+        li:first-child{
+            margin-left: 0;
+        } 
+        } 
+    }
+}
+.sire{
+    padding-top: 80px;
+    h1{
+        font-size: 40px;
+        color: #666;
+        text-align: center; 
+         
+    }
+    .Technological-process{
+        padding-bottom: 80px;
+        margin-top: 80px;
+    }
+}
+ 

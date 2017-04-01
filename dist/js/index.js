@@ -3,58 +3,12 @@ var heig = $(window).height();
 var banImg = document.getElementById("banner");
 banImg.style.height = heig + "px";
 $(function() {
-	//map 呼吸灯	
-	$(".ours-addr-node li").click(function() {
-		$(".ours-addr-node li").removeClass("atcive");
-		$(this).addClass("atcive")
+	//nav点击事件
+	$("nav ul li").click(function(){
+	  $("nav ul li").removeClass('nav-ate');
+	  $(this).addClass('nav-ate');
 	})
-
-	//map点击事件
-
-	$('#cale li').click(function() {
-		var cls = $(this).attr('type');//获取attr
-		var e = $('#address,#cale-img').find('.' + cls);
-		//地址详细侧样式
-		$('#address dl').css({
-			"margin-top": "40px",
-			"opacity": "0",
-
-		});
-		$('#cale-img li').css({
-			"margin-top": "50px",
-			"opacity": "0",
-
-		});
-		e.css({
-			"margin-top": "0px",
-			"opacity": "1",
-		})
-		//地址右侧
-		var text = $(this).children().text();
-		$(this).siblings().children().css("display","block");
-		$(this).children().css("display","none");
-		
-	});
-
-	//合作弹窗
-	$(".collaboration").click(function() {
-		$(".cooperation").css("display", "block");
-		return false;
-	})
-
-	$(".close").click(function() {
-			$(".cooperation").css("display", "none");
-			return false;
-		})
-		//侧边栏弹窗
-	$(".share li").click(function() {
-		$(".share li").children('dl').css("display", "none");
-		$(this).children('dl').css("display", "block");
-	});
-	$(".share li .w-close").click(function() {
-		$(this).parent().parent().css("display", "none");
-		return false;
-	});
+	
 
 })
 
@@ -63,10 +17,12 @@ $(window).scroll(function() {
 	var top = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop; //滚轮滚动的距离
 	var heig = $(window).height();
 	if(top < 1) {
-		$(".banner").css("margin-top", "0px")
+		$(".banner").css("margin-top", "0px");
+		$(".share").css("display","none");
 	};
 	if(top > 1) {
 		$(".banner").css("margin-top", -heig + "px")
+		$(".share").css("display","block");
 			//局部刷新
 		$(".map").load(location.href + " .map");
 	};
@@ -78,3 +34,52 @@ $(window).scroll(function() {
 		})
 	};
 });
+//banner动画效果
+var MX, MY, WW, WH, X, Y, OX, OY, HWW, HWH, RX, RY, S = 0.7,
+			t = 0;
+		getW();
+
+		function getW() {
+			WW = $(window).width();
+			WH = $(window).height();
+			HWW = WW / 2;
+			HWH = WH / 2;
+		};
+		$(window).resize(function() {
+			getW();
+		});
+		$(document).mousemove(function(e) {
+			MX = e.pageX;
+			MY = e.pageY;
+			OX = X;
+			OX = Y;
+			X = (HWW - MX) / 2;
+			Y = (HWH - MY) / 2;
+			
+			if (MY < HWH) {
+				S = MY / 1000 + 0.3;
+				RX = (HWH - MY) * 0.03;
+				SRX = (HWH - MY) * 0.06;
+			} else {
+				S = (WH - MY) / 1000 + 0.1;
+				RX = '-' + (MY - HWH) * 0.03;
+				SRX = '-' + (MY - HWH) * 0.06;
+			 
+			};
+			if (MX < HWW) {
+				RY = '-' + (HWW - MX) / 50;
+			} else {
+				RY = (MX - HWW) / 50;
+			};
+			moveDiv(X, Y, S, RX, RY);
+		});
+
+		function moveDiv(X, Y, S, RX, RY) {
+			var ban = $("#banner-gif");
+			var banText = $("#banner-gif2");
+			var banCss = 'translate(' + X / 4 + 'px,' + Y / 4 + 'px) rotateX(' + RX + 'deg)';
+			var banTextCss = 'translate(' + X / 2 + 'px,' + Y / 2 + 'px) rotateX(' + SRX + 'deg)';
+			ban.css("transform", banCss);
+			banText.css("transform", banTextCss);
+			return false;
+		};

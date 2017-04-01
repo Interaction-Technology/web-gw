@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import "sass/header";
+@import "sass/footer";
+@import "sass/share";
+
+.ach-cnt {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: auto;
+    h1 {
+    font-size: 40px;
+    color: #666;
+    text-align: center;
+}
+    .ach-itme {
+        margin-top: 40px;
+        overflow: hidden;
+        padding: 0 40px;
+        li {
+            float: left;
+            width: 25%;
+            transition: all 0.5s;
+            height: 430px;
+            img {
+                width: auto;
+                height: auto;
+            }
+            &:hover {
+                cursor: pointer;
+                .ach-info {
+                    margin-top: -50px;
+                }
+                .ach{
+                    box-shadow: 0 2px 5px #999;
+                }
+            }
+            
+        }
+    }
+}
+.ach-ach {
+    padding-top: 80px;
+    background-color: #fff;
+    position: relative;
+    top: -100px;
+    .ach-tab {
+        margin-top: 80px;
+        text-align: center;
+        span {
+            display: inline-block;
+            margin-left: 80px;
+            font-size: 24px;
+            color: #999;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .ach-tab-ate {
+            color: #070200;
+            border-bottom: 2px solid #070200;
+        }
+    }
+}
+.ach {
+    width: 290px;
+    overflow: hidden;
+    height: 395px;
+    .ach-img {
+        width: 290px;
+        height: 290px;
+        overflow: hidden;
+    }
+    .ach-info {
+        position: relative;
+        padding-top: 30px;
+        text-align: center;
+        background-color: #fff;
+        transition: all 0.5s;
+        padding-bottom: 20px;
+        p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 18px;
+        }
+        span {
+            font-size: 14px;
+            color: #999;
+        }
+        a {
+            width: 120px;
+            height: 40px;
+            border-radius: 20px;
+            display: block;
+            text-align: center;
+            line-height: 40px;
+            color: #999;
+            border: 1px solid #999;
+            margin: 20px auto 0 auto;
+            text-decoration: none;
+         &:hover{
+             background-color: #eeff01;
+             color: #000;
+             border: none;
+         }
+        }
+    }
+}
