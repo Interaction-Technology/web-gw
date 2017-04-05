@@ -8,7 +8,7 @@
     width: 36px;
     height: 152px;
     color: #fff;
-    z-index: 1;    
+    z-index: 1;
     li {
         position: relative;
         display: block;
@@ -17,12 +17,11 @@
         margin-bottom: 1px;
         line-height: 36px;
         text-align: center;
-    img{
-        width: auto;
-        height: auto;
-        display: inline-block;
-        
-    }
+        img {
+            width: auto;
+            height: auto;
+            display: inline-block;
+        }
         dl {
             position: absolute;
             left: -224px;
@@ -46,7 +45,7 @@
             }
         }
     }
-    li:hover{
+    li:hover {
         cursor: pointer;
     }
 }
@@ -59,19 +58,19 @@
             height: 41px;
             text-align: left;
             border-top: 1px solid #f7f7f7;
-            .t-tell{
+            .t-tell {
                 background-image: url(../images/home/tell-tell.png);
                 width: 13px;
                 height: 13px;
                 display: block;
-                margin: 14px 10px 0 0 ;
+                margin: 14px 10px 0 0;
             }
-            .t-phone{
-                 background-image: url(../images/home/tell-phone.png);
+            .t-phone {
+                background-image: url(../images/home/tell-phone.png);
                 width: 10px;
                 height: 14px;
                 display: block;
-                margin: 14px 10px 0 2px ;
+                margin: 14px 10px 0 2px;
             }
         }
     }
@@ -95,10 +94,13 @@
         }
     }
 }
-.r-w-win,.r-t-win{
-display: none;
+
+.r-w-win,
+.r-t-win {
+    display: none;
 }
-.w-close{
+
+.w-close {
     width: 12px;
     height: 12px;
     display: inline-block;
