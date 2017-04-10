@@ -201,6 +201,72 @@ body { background-color: #f7f7f7; }
 
 .cnt { position: relative; z-index: 1; margin-top: -100px; padding: 82px 40px 100px; background-color: #fff; }
 
-h1 { font-size: 40px; text-align: center; color: #666; margin-bottom: 60px; }
+h2 { font-size: 40px; text-align: center; color: #666; margin-bottom: 60px; }
 
 .banner { background: url(../images/home/bananer.png) no-repeat center; }
+
+/* 公司概述 */
+.overview { margin-bottom: 40px; }
+
+.overview li { float: left; width: 25%; text-align: center; }
+
+.overview li i, .overview li strong, .overview li small { display: block; width: 100%; }
+
+.overview li i { height: 80px; margin-bottom: 30px; }
+
+.overview li strong { height: 39px; margin-bottom: 17px; }
+
+.overview li small { font-size: 18px; font-weight: lighter; color: #999; }
+
+.overview-set-up i { background: url(../images/img/set-up.png) no-repeat center; }
+
+.overview-set-up strong { background: url(../images/img/10years.png) no-repeat center; }
+
+.overview-teams i { background: url(../images/img/teams.png) no-repeat center; }
+
+.overview-teams strong { background: url(../images/img/128people.png) no-repeat center; }
+
+.overview-project i { background: url(../images/img/project.png) no-repeat center; }
+
+.overview-project strong { background: url(../images/img/200plus.png) no-repeat center; }
+
+.overview-awards i { background: url(../images/img/awards.png) no-repeat center; }
+
+.overview-awards strong { background: url(../images/img/18items.png) no-repeat center; }
+
+.company-intro { font-size: 14px; line-height: 30px; margin-bottom: 60px; text-indent: 2em; color: #666; }
+
+/* 公司成员 */
+.member { padding-bottom: 60px; margin-bottom: 80px; border-bottom: 1px solid #f0f0f0; }
+
+.join-us { text-align: center; font-size: 18px; }
+
+.join-us u { color: #070200; }
+
+/* 公司成员-核心 */
+.core-member-list { margin-right: 1px; }
+
+.core-member-list li { position: relative; width: 149px; height: 134px; margin-top: -23px; background: url(../images/img/member-bg.png) no-repeat; }
+
+.core-member-list li:first-child { margin-top: 0; }
+
+.core-member-list li .img-box { position: absolute; top: 0; left: 0; width: 104px; height: 104px; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; }
+
+.core-member-list li:hover .img-box, .core-member-list li.on .img-box { -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); -ms-filter: grayscale(0%); -o-filter: grayscale(0%); filter: grayscale(0%); }
+
+.info-img { display: inline-block; width: 320px; height: 432px; }
+
+.info-list { width: 750px; padding: 60px 60px 0; background-color: #fcfcfc; color: #666; }
+
+.info-list dt { font-size: 48px; line-height: 1; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #f0f0f0; }
+
+.info-list dt span { font-size: 30px; margin-left: 28px; }
+
+.info-list dd { width: 280px; padding-left: 40px; float: left; font-size: 18px; line-height: 1; margin-bottom: 25px; }
+
+.info-list dd:before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 15px; background-color: #666; position: relative; top: -2px; margin-right: 20px; }
+
+.info-list p { padding-top: 17px; border-top: 1px solid #f0f0f0; font-size: 14px; line-height: 24px; }
+
+/* 公司成员-员工 */
+.office-member li { display: inline-block; width: 10%; height: 122px; background-color: #333; float: left; }

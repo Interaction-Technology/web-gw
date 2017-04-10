@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* 头部 */
-header, .header { width: 100%; height: 62px; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 1; }
+header, .header { width: 100%; height: 62px; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 99; }
 
 .logo { margin-top: 15px; float: left; width: 142px; height: 32px; display: block; background-image: url("../images/logo/logo.png"); }
 
@@ -72,6 +72,93 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 .map-qq i { position: relative; top: 3px; width: 14px; height: 14px; display: inline-block; background-image: url(../images/home/map-qq.png); }
 
 .map-erweima { width: 140px; height: 140px !important; display: inline-block; background-image: url(../images/home/map-erweima.png); }
+
+/* 我们 */
+.cnt-ours { position: relative; overflow: hidden; padding-top: 0 !important; height: 600px; }
+
+.cnt-ours .map { position: absolute; z-index: -1; height: 100%; bottom: 0; left: 0; }
+
+.ours-logo { height: 440px; border-right: 1px solid #5f6964; padding-top: 100px; margin-left: 50px; }
+
+.ours-logo img { width: 160px; height: 160px; }
+
+.ours-addr-info { margin: 136px 0 0 50px; }
+
+.ours-addr-info dl { transition: all 1s; margin-top: 40px; position: absolute; }
+
+.ours-addr-info dl dt { font-size: 18px; color: #fff; }
+
+.ours-addr-info dl span { width: 100%; height: 1px; display: block; background-color: #5f6964; margin: 30px 0; }
+
+.ours-addr-info dl dd { font-size: 12px; color: #fff; margin-bottom: 17px; }
+
+.ours-addr-info dl dd img { margin-top: 30px; width: 140px; height: 140px; }
+
+.ours-addr-img { margin-top: 200px; margin-right: 102px; position: relative; width: 200px; height: 200px; }
+
+.ours-addr-img li { width: 200px; height: 200px; border-radius: 50%; border: 2px solid #f8f8f8; position: absolute; opacity: 0; margin-top: 50px; transition: all 1s; }
+
+.ours-addr-img li span { position: absolute; top: 50%; left: -50px; font-size: 18px; color: #fff; margin-top: -9px; width: 36px; display: block; border-bottom: 2px solid #fff; }
+
+.ours-addr-img li img { width: 100%; height: 100%; border-radius: 50%; }
+
+.ours-addr-img li:first-child { opacity: 1; }
+
+.ours-addr-node li { border-radius: 50%; width: 12px; height: 12px; position: absolute; background-color: #e4e5e5; }
+
+.ours-addr-node li span { width: 100px; position: absolute; color: #fff; }
+
+.ours-addr-node li:hover { cursor: pointer; font-size: 16px; }
+
+.ours-addr-node .addr-sz { bottom: 34%; left: 58%; }
+
+.ours-addr-node .addr-sz span { top: -20px; }
+
+.ours-addr-node .addr-wh { bottom: 40%; left: 57%; }
+
+.ours-addr-node .addr-wh span { top: -20px; left: -20px; }
+
+.ours-addr-node .addr-nj { bottom: 44%; left: 59%; }
+
+.ours-addr-node .addr-nj span { top: -20px; left: 10px; }
+
+.ours-addr-node .addr-bj { bottom: 50%; left: 58%; }
+
+.ours-addr-node .addr-bj span { width: 100px; position: absolute; top: -20px; color: #fff; }
+
+.ours-addr-node .atcive { animation: macolor 1.5s ease-out; animation-iteration-count: infinite; }
+
+.ours-addr-node .atcive:before { content: ""; width: 26px; height: 26px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -13px 0 0 -13px; left: 50%; top: 50%; animation: myfirst 1.5s ease-out; -moz-animation: myfirst 1.5s ease-out; /* Firefox */ -webkit-animation: myfirst 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: myfirst 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
+
+.ours-addr-node .atcive:after { content: ""; width: 40px; height: 40px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -20px 0 0 -20px; left: 50%; top: 50%; animation: mysen 1.5s ease-out; -moz-animation: mysen 1.5s ease-out; /* Firefox */ -webkit-animation: mysen 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: mysen 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
+
+#address .pal-2, #address .pal-3, #address .pal-1 { opacity: 0; }
+
+/* 呼吸灯动画 */
+@keyframes mycolor { 0% { background-color: #e4e5e5; }
+  100% { background-color: #fff; } }
+
+@keyframes myfirst { 0% { -webkit-transform: scale(0);
+    opacity: 0.0; }
+  25% { -webkit-transform: scale(0);
+    opacity: 0.1; }
+  50% { -webkit-transform: scale(0.1);
+    opacity: 0.3; }
+  75% { -webkit-transform: scale(0.5);
+    opacity: 0.5; }
+  100% { -webkit-transform: scale(1);
+    opacity: 0.0; } }
+
+@keyframes mysen { 0% { -webkit-transform: scale(0);
+    opacity: 0.0; }
+  25% { -webkit-transform: scale(0);
+    opacity: 0.1; }
+  50% { -webkit-transform: scale(0.1);
+    opacity: 0.3; }
+  75% { -webkit-transform: scale(0.5);
+    opacity: 0.5; }
+  100% { -webkit-transform: scale(1);
+    opacity: 0.0; } }
 
 /* 右侧浮动弹窗 */
 .share { display: none; position: fixed; right: 50px; bottom: 222px; width: 36px; height: 152px; color: #fff; z-index: 1; }
@@ -178,90 +265,3 @@ body { min-width: 1310px; }
 .cnt-result .left-icon { left: 30%; }
 
 .cnt-result .right-icon { right: 30%; }
-
-/* 我们 */
-.cnt-ours { position: relative; overflow: hidden; padding-top: 0; height: 600px; }
-
-.cnt-ours .map { position: absolute; z-index: -1; height: 100%; bottom: 0; left: 0; }
-
-.ours-logo { height: 440px; border-right: 1px solid #5f6964; padding-top: 100px; margin-left: 50px; }
-
-.ours-logo img { width: 160px; height: 160px; }
-
-.ours-addr-info { margin: 136px 0 0 50px; }
-
-.ours-addr-info dl { transition: all 1s; margin-top: 40px; position: absolute; }
-
-.ours-addr-info dl dt { font-size: 18px; color: #fff; }
-
-.ours-addr-info dl span { width: 100%; height: 1px; display: block; background-color: #5f6964; margin: 30px 0; }
-
-.ours-addr-info dl dd { font-size: 12px; color: #fff; margin-bottom: 17px; }
-
-.ours-addr-info dl dd img { margin-top: 30px; width: 140px; height: 140px; }
-
-.ours-addr-img { margin-top: 200px; margin-right: 102px; position: relative; width: 200px; height: 200px; }
-
-.ours-addr-img li { width: 200px; height: 200px; border-radius: 50%; border: 2px solid #f8f8f8; position: absolute; opacity: 0; margin-top: 50px; transition: all 1s; }
-
-.ours-addr-img li span { position: absolute; top: 50%; left: -50px; font-size: 18px; color: #fff; margin-top: -9px; width: 36px; display: block; border-bottom: 2px solid #fff; }
-
-.ours-addr-img li img { width: 100%; height: 100%; border-radius: 50%; }
-
-.ours-addr-img li:first-child { opacity: 1; }
-
-.ours-addr-node li { border-radius: 50%; width: 12px; height: 12px; position: absolute; background-color: #e4e5e5; }
-
-.ours-addr-node li span { width: 100px; position: absolute; color: #fff; }
-
-.ours-addr-node li:hover { cursor: pointer; font-size: 16px; }
-
-.ours-addr-node .addr-sz { bottom: 34%; left: 58%; }
-
-.ours-addr-node .addr-sz span { top: -20px; }
-
-.ours-addr-node .addr-wh { bottom: 40%; left: 57%; }
-
-.ours-addr-node .addr-wh span { top: -20px; left: -20px; }
-
-.ours-addr-node .addr-nj { bottom: 44%; left: 59%; }
-
-.ours-addr-node .addr-nj span { top: -20px; left: 10px; }
-
-.ours-addr-node .addr-bj { bottom: 50%; left: 58%; }
-
-.ours-addr-node .addr-bj span { width: 100px; position: absolute; top: -20px; color: #fff; }
-
-.ours-addr-node .atcive { animation: macolor 1.5s ease-out; animation-iteration-count: infinite; }
-
-.ours-addr-node .atcive:before { content: ""; width: 26px; height: 26px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -13px 0 0 -13px; left: 50%; top: 50%; animation: myfirst 1.5s ease-out; -moz-animation: myfirst 1.5s ease-out; /* Firefox */ -webkit-animation: myfirst 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: myfirst 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
-
-.ours-addr-node .atcive:after { content: ""; width: 40px; height: 40px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -20px 0 0 -20px; left: 50%; top: 50%; animation: mysen 1.5s ease-out; -moz-animation: mysen 1.5s ease-out; /* Firefox */ -webkit-animation: mysen 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: mysen 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
-
-#address .pal-2, #address .pal-3, #address .pal-1 { opacity: 0; }
-
-/* 呼吸灯动画 */
-@keyframes mycolor { 0% { background-color: #e4e5e5; }
-  100% { background-color: #fff; } }
-
-@keyframes myfirst { 0% { -webkit-transform: scale(0);
-    opacity: 0.0; }
-  25% { -webkit-transform: scale(0);
-    opacity: 0.1; }
-  50% { -webkit-transform: scale(0.1);
-    opacity: 0.3; }
-  75% { -webkit-transform: scale(0.5);
-    opacity: 0.5; }
-  100% { -webkit-transform: scale(1);
-    opacity: 0.0; } }
-
-@keyframes mysen { 0% { -webkit-transform: scale(0);
-    opacity: 0.0; }
-  25% { -webkit-transform: scale(0);
-    opacity: 0.1; }
-  50% { -webkit-transform: scale(0.1);
-    opacity: 0.3; }
-  75% { -webkit-transform: scale(0.5);
-    opacity: 0.5; }
-  100% { -webkit-transform: scale(1);
-    opacity: 0.0; } }
