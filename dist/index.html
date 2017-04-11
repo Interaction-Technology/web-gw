@@ -6,7 +6,7 @@
     <title>交互科技-首页</title>
     <meta name=”keywords”  content=”关键词1,关键词2,关键词3,……”/>
 <meta name="description" content="" charset="utf-8" />
-<link rel="stylesheet" href="css/bootstrap.min.css" />
+<!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
@@ -89,20 +89,20 @@
     <div class="banner" id="banner">
         <!--<img class="ban"  src="images/home/bananer.png" alt="bannner">-->
         <span>
-	        <i class="red-png"></i>
-	        <i class="blue-one-png"></i>
-	        <i class="blue-two-png"></i>
-	        <i class="green-png"></i>
-	        <i class="yellow-png"></i>
+            <i class="red-png"></i>
+            <i class="blue-one-png"></i>
+            <i class="blue-two-png"></i>
+            <i class="green-png"></i>
+            <i class="yellow-png"></i>
        </span>
         <span class="banner-gif" id="banner-gif">
-        	<img class="ban-top-1" src="images/banner/index/top1.png">
-        	<img class="ban-top-2" src="images/banner/index/top2.png">
-        	<img class="ban-butt-1" src="images/banner/index/bott1.png">
-        	<img class="ban-butt-2" src="images/banner/index/bott2.png">      	      	 
+            <img class="ban-top-1" src="images/banner/index/top1.png">
+            <img class="ban-top-2" src="images/banner/index/top2.png">
+            <img class="ban-butt-1" src="images/banner/index/bott1.png">
+            <img class="ban-butt-2" src="images/banner/index/bott2.png">                 
         </span>
         <span class="banner-gif2" id="banner-gif2">
-        	<img class="ban-text" src="images/banner/index/text.png">  
+            <img class="ban-text" src="images/banner/index/text.png">  
         </span>
     </div>
     <!-- content -->
@@ -133,29 +133,34 @@
             </ul>
         </div>
     </div>
-    <div id="carousel-example-generic" class="carousel slide cnt cnt-result bac-gry" data-ride="carousel">
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner w1300" role="listbox">
-            <h2>成果</h2>
-            <div class="item active">
-                <p>力科威尔是从事网络摄像机研发、生产、销售和服务为一体的专业OEM/ODM厂商，是一款智能家居产品，在出差或工作过程中对于家的把控的设计。整体采用企业绿色，以简洁舒适为主要思想，主张重点展示有用信息.</p>
-                <div class="result-show">
-                    <img src="images/img/index/webpoj.png">
-                </div>
+    <div class="cnt cnt-projects">
+        <h2>成果</h2>
+        <div class="projects-main" id="projects">
+            <div class="bd">
+                <ul>
+                    <li class="projects-list-1">
+                        <a href="">
+                            <p>力科威尔是从事网络摄像机研发、生产、销售和服务为一体的专业OEM/ODM厂商，是一款智能家居产品，在出差或工作过程中对于家的把控的设计。整体采用企业绿色，以简洁舒适为主要思想，主张重点展示有用信息.</p>
+                            <img src="images/img/index/webpoj.png">
+                        </a>
+                    </li>
+                    <li class="projects-list-2">
+                        <a href="">
+                            <p>力科威尔是从事网络摄像机研发、生产、销售和服务为一体的专业OEM/ODM厂商，是一款智能家居产品，在出差或工作过程中对于家的把控的设计。整体采用企业绿色，以简洁舒适为主要思想，主张重点展示有用信息.</p>
+                            <img src="images/img/index/webpoj.png">
+                        </a>
+                    </li>
+                    <li class="projects-list-3">
+                        <a href="">
+                            <p>力科威尔是从事网络摄像机研发、生产、销售和服务为一体的专业OEM/ODM厂商，是一款智能家居产品，在出差或工作过程中对于家的把控的设计。整体采用企业绿色，以简洁舒适为主要思想，主张重点展示有用信息.</p>
+                            <img src="images/img/index/webpoj.png">
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="item">
-                <img src="" alt="">
-                <div class="carousel-caption">
-                </div>
-            </div>
+            <a class="prev" href="javascript:void(0)"></a>
+            <a class="next" href="javascript:void(0)"></a>
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <img class="left-icon" src="images/icons/index/left.png">
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <img class="right-icon" src="images/icons/index/right.png">
-        </a>
     </div>
     <div class="cnt cnt-partner pb100">
         <div class="w1300">
@@ -274,9 +279,8 @@
         </div>
     </div>
     <p class="info">版权所有© 2014 深圳市交互科技有限公司 粤ICP备09105404号-3</p>
-</footer>
+    </footer>
 <script type="text/javascript" src="js/jquery-3.2.0.min.js" ></script>
-<script type="text/javascript" src="js/bootstrap.min.js" ></script>
 <script type="text/javascript" src="js/base.js" ></script>
  
 
@@ -284,7 +288,19 @@
 
 
 
+    <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+    jQuery("#projects").slide({
+        mainCell: ".bd ul", //获取节点
+        effect: "leftLoop", //向左循环滚动
+        autoPlay: true, //自动播放
+        easing: "easeInQuad", //滚动效果
+        delayTime: 500, //滚动经历时间
+        interTime: 5000 //间隔时间
+    });
+    </script>
 </body>
 
 </html>
