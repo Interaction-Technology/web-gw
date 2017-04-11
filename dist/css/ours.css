@@ -257,7 +257,7 @@ h2 { font-size: 40px; text-align: center; color: #666; margin-bottom: 60px; }
 
 .info-img { display: inline-block; width: 320px; height: 432px; }
 
-.info-list { width: 750px; padding: 60px 60px 0; background-color: #fcfcfc; color: #666; }
+.info-list { width: 750px; height: 432px; padding: 60px 60px 0; background-color: #fcfcfc; color: #666; }
 
 .info-list dt { font-size: 48px; line-height: 1; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #f0f0f0; }
 
@@ -271,3 +271,56 @@ h2 { font-size: 40px; text-align: center; color: #666; margin-bottom: 60px; }
 
 /* 公司成员-员工 */
 .office-member li { display: inline-block; width: 10%; height: 122px; background-color: #333; float: left; overflow: hidden; }
+
+/* 发展历程 */
+.development { height: 400px; background: url(../images/icons/ours/line.png) no-repeat center; }
+
+.development > div { width: 160px; display: inline-block; margin-left: 26px; position: relative; opacity: .6; }
+
+.development > div:first-child { margin-left: 55px; opacity: 1; }
+
+.development > div i, .development > div strong, .development > div small { display: block; margin: 0 auto; }
+
+.development > div i { width: 120px; height: 180px; margin: 0 auto; }
+
+.development > div strong { position: relative; width: 127px; height: 92px; }
+
+.development > div p { position: absolute; font-size: 14px; color: #666; line-height: 24px; text-align: center; }
+
+.development .dev-top { top: -5px; }
+
+.development .dev-top p { top: 284px; }
+
+.development .dev-bottom { top: 225px; }
+
+.development .dev-bottom strong { top: -272px; }
+
+.development .dev-bottom p { top: -225px; }
+
+.dev-2006 i { background: url(../images/icons/ours/jiaohu.png) no-repeat center; }
+
+.dev-2006 strong { background: url(../images/icons/ours/2006.png) no-repeat center; }
+
+.dev-2006 p { top: 284px; }
+
+.dev-2012 i { background: url(../images/icons/ours/huawei.png) no-repeat center; }
+
+.dev-2012 strong { background: url(../images/icons/ours/2012.png) no-repeat center; }
+
+.dev-2014 i { background: url(../images/icons/ours/tencent.png) no-repeat center; }
+
+.dev-2014 strong { background: url(../images/icons/ours/2014.png) no-repeat center; }
+
+.dev-2015 i { background: url(../images/icons/ours/nanjing.png) no-repeat center; }
+
+.dev-2015 strong { background: url(../images/icons/ours/2015.png) no-repeat center; }
+
+.dev-2016 i { background: url(../images/icons/ours/jhsd.png) no-repeat center; }
+
+.dev-2016 strong { background: url(../images/icons/ours/2016.png) no-repeat center; }
+
+.dev-future i { background: url(../images/icons/ours/jiaohu2.png) no-repeat center; }
+
+.dev-future strong { background: url(../images/icons/ours/future.png) no-repeat center; }
+
+.dev-future p { top: -155px !important; }
