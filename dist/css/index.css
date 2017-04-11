@@ -2,7 +2,7 @@
 /* 头部 */
 header, .header { width: 100%; height: 62px; position: fixed; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 99; }
 
-.logo { margin-top: 15px; float: left; width: 142px; height: 32px; display: block; background-image: url("../images/logo/logo.png"); }
+.logo { margin-top: 15px; float: left; width: 142px; height: 32px; display: block; background-image: url("../images/logo/logo-all.png"); }
 
 .logo a { display: inline-block; width: 142px; height: 32px; text-indent: -9999px; }
 
@@ -22,9 +22,10 @@ nav ul .collaboration { display: inline-block; width: 108px; background-color: #
 
 nav ul .collaboration:hover { color: #000; cursor: pointer; }
 
+/* 我要合作弹窗 */
 .cooperation { display: none; width: 840px; height: 500px; background-color: #fff; position: fixed; top: 256px; left: 50%; margin-left: -420px; z-index: 2; border-radius: 10px; }
 
-.cooperation .close { background-image: url("../images/home/colse.png"); width: 16px; height: 16px; display: block; float: right; margin: 30px; }
+.cooperation .close { background-image: url("../images/icons/index/colse.png"); width: 16px; height: 16px; display: block; float: right; margin: 30px; }
 
 .cooperation .close:hover { cursor: pointer; }
 
@@ -38,9 +39,9 @@ nav ul .collaboration:hover { color: #000; cursor: pointer; }
 
 .cooperation .coo-left li { margin-top: 26px; }
 
-.cooperation .coo-left .coo-erweima { width: 140px; height: 140px !important; display: inline-block; background-image: url("../images/home/map-erweima.png"); }
+.cooperation .coo-left .coo-erweima { width: 140px; height: 140px !important; display: inline-block; background-image: url("../images/img/index/map-erweima.png"); }
 
-.cooperation .coo-left .coo-qq-icon { width: 14px; height: 14px; display: inline-block; top: 2px; position: relative; background-image: url("../images/home/coo-qq.png"); }
+.cooperation .coo-left .coo-qq-icon { width: 14px; height: 14px; display: inline-block; top: 2px; position: relative; background-image: url("../images/img/index/coo-qq.png"); }
 
 .cooperation .coo-right { border-radius: 0 0 10px 0; }
 
@@ -69,9 +70,9 @@ nav ul .collaboration:hover { color: #000; cursor: pointer; }
 /* 底部 */
 footer .info { height: 50px; text-align: center; line-height: 50px; color: #414040; }
 
-.map-qq i { position: relative; top: 3px; width: 14px; height: 14px; display: inline-block; background-image: url(../images/home/map-qq.png); }
+.map-qq i { position: relative; top: 3px; width: 14px; height: 14px; display: inline-block; background-image: url(../images/icons/index/map-qq.png); }
 
-.map-erweima { width: 140px; height: 140px !important; display: inline-block; background-image: url(../images/home/map-erweima.png); }
+.map-erweima { width: 140px; height: 140px !important; display: inline-block; background-image: url(../images/img/index/map-erweima.png); }
 
 /* 我们 */
 .cnt-ours { position: relative; overflow: hidden; padding-top: 0 !important; height: 600px; }
@@ -134,7 +135,7 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 
 #address .pal-2, #address .pal-3, #address .pal-1 { opacity: 0; }
 
-/* 呼吸灯动画 */
+/* 底部地图地标呼吸动画 */
 @keyframes mycolor { 0% { background-color: #e4e5e5; }
   100% { background-color: #fff; } }
 
@@ -179,9 +180,9 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 
 .telephone dl dd { line-height: 41px; height: 41px; text-align: left; border-top: 1px solid #f7f7f7; }
 
-.telephone dl dd .t-tell { background-image: url(../images/home/tell-tell.png); width: 13px; height: 13px; display: block; margin: 14px 10px 0 0; }
+.telephone dl dd .t-tell { background-image: url(../images/icons/index/tell-tell.png); width: 13px; height: 13px; display: block; margin: 14px 10px 0 0; }
 
-.telephone dl dd .t-phone { background-image: url(../images/home/tell-phone.png); width: 10px; height: 14px; display: block; margin: 14px 10px 0 2px; }
+.telephone dl dd .t-phone { background-image: url(../images/icons/index/tell-phone.png); width: 10px; height: 14px; display: block; margin: 14px 10px 0 2px; }
 
 .share-WeChat dl { top: 0; }
 
@@ -193,7 +194,7 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 
 .r-w-win, .r-t-win { display: none; }
 
-.w-close { width: 12px; height: 12px; display: inline-block; background-image: url(../images/home/w-colse.png); margin-top: 22px; }
+.w-close { width: 12px; height: 12px; display: inline-block; background-image: url(../images/icons/index/w-colse.png); margin-top: 22px; }
 
 body { min-width: 1310px; }
 
@@ -210,15 +211,15 @@ body { min-width: 1310px; }
 
 .banner .ban-text { width: 1109px; height: 326px; position: absolute; top: 50%; left: 50%; margin: -163px 0 0 -554px; background-repeat: no-repeat; background-size: 100%; }
 
-.banner .red-png { width: 24px; height: 23px; display: block; background-image: url(../images/gif/red.png); position: absolute; bottom: 20%; right: 20%; animation: ban 2s ease-out; animation-iteration-count: infinite; }
+.banner .red-png { width: 24px; height: 23px; display: block; background-image: url(../images/banner/index/red.png); position: absolute; bottom: 20%; right: 20%; animation: ban 2s ease-out; animation-iteration-count: infinite; }
 
-.banner .blue-one-png { width: 82px; height: 44px; display: block; background-image: url(../images/gif/bule-one.png); position: absolute; bottom: -26px; left: 38%; animation: ban 2s ease-out; animation-iteration-count: infinite; }
+.banner .blue-one-png { width: 82px; height: 44px; display: block; background-image: url(../images/banner/index/bule-one.png); position: absolute; bottom: -26px; left: 38%; animation: ban 2s ease-out; animation-iteration-count: infinite; }
 
-.banner .blue-two-png { width: 89px; height: 79px; display: block; background-image: url(../images/gif/bule-two.png); position: absolute; bottom: 30%; left: -10px; animation: ban 2s ease-out; animation-iteration-count: infinite; }
+.banner .blue-two-png { width: 89px; height: 79px; display: block; background-image: url(../images/banner/index/bule-two.png); position: absolute; bottom: 30%; left: -10px; animation: ban 2s ease-out; animation-iteration-count: infinite; }
 
-.banner .green-png { width: 62px; height: 72px; display: block; background-image: url(../images/gif/green.png); position: absolute; top: 50%; right: 20%; animation: ban 2s ease-out; animation-iteration-count: infinite; }
+.banner .green-png { width: 62px; height: 72px; display: block; background-image: url(../images/banner/index/green.png); position: absolute; top: 50%; right: 20%; animation: ban 2s ease-out; animation-iteration-count: infinite; }
 
-.banner .yellow-png { width: 34px; height: 40px; display: block; background-image: url(../images/gif/yellow.png); position: absolute; top: 50%; left: 20%; animation: ban 2s ease-out; animation-iteration-count: infinite; }
+.banner .yellow-png { width: 34px; height: 40px; display: block; background-image: url(../images/banner/index/yellow.png); position: absolute; top: 50%; left: 20%; animation: ban 2s ease-out; animation-iteration-count: infinite; }
 
 .banner .banner-gif, .banner .banner-gif2 { width: 100%; height: 100%; transition: all 0.2s ease-out; position: absolute; }
 
@@ -252,7 +253,7 @@ body { min-width: 1310px; }
 .cnt-service ul li p { padding: 0 10px; font-size: 18px; color: #999999; text-align: center; line-height: 28px; letter-spacing: 2px; transition: all 0.5s; }
 
 /* 成果 */
-.cnt-result { background-image: url("../images/home/bg-cg.png"); text-align: center; }
+.cnt-result { background-image: url(../images/img/index/bg-cg.png); text-align: center; }
 
 .cnt-result h2 { height: 60px; width: 160px; margin: 0 auto 50px; border-bottom: 2px solid #58DD00; font-size: 40px; text-align: center; }
 
