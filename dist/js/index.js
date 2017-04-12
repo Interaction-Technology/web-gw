@@ -2,14 +2,13 @@
 var heig = $(window).height();
 var banImg = document.getElementById("banner");
 banImg.style.height = heig + "px";
+
 $(function() {
     //nav点击事件
     $("nav ul li").click(function() {
         $("nav ul li").removeClass('nav-ate');
         $(this).addClass('nav-ate');
     })
-
-
 })
 
 $(window).scroll(function() {
@@ -18,22 +17,23 @@ $(window).scroll(function() {
     var heig = $(window).height();
     if (top < 1) {
         $(".banner").css("margin-top", "0px");
-        $(".share").css("display", "none");
+        $(".share").hide();
     };
     if (top > 1) {
         $(".banner").css("margin-top", -heig + "px")
-        $(".share").css("display", "block");
+        $(".share").show();
         //局部刷新
         $(".map").load(location.href + " .map");
     };
     if (top = heig) {
         $(".cnt-service ul li").css({
-            "margin-top": "0px",
+            // "margin-top": "0px",
+            "top": "0",
             "opacity": "1",
-
         })
     };
 });
+
 //banner动画效果
 var MX, MY, WW, WH, X, Y, OX, OY, HWW, HWH, RX, RY, S = 0.7,
     t = 0;
@@ -45,9 +45,11 @@ function getW() {
     HWW = WW / 2;
     HWH = WH / 2;
 };
+
 $(window).resize(function() {
     getW();
 });
+
 $(document).mousemove(function(e) {
     MX = e.pageX;
     MY = e.pageY;
@@ -83,3 +85,36 @@ function moveDiv(X, Y, S, RX, RY) {
     banText.css("transform", banTextCss);
     return false;
 };
+
+// 成果轮播图
+// 轮播参考：（http://www.superslide2.com/demo.html）- 2.焦点图／幻灯片
+jQuery("#projects").slide({
+    // 获取节点
+    mainCell: ".bd ul",
+    // 向左循环滚动
+    effect: "leftLoop",
+    // 自动播放
+    autoPlay: true,
+    // 滚动效果（参考：http://www.superslide2.com/otherDemo/T2.1/easing.html）
+    easing: "easeInQuad",
+    // 滚动经历时间
+    delayTime: 500,
+    // 间隔时间
+    interTime: 5000
+});
+
+// 合作伙伴动效
+$(function() {
+    // Tip: avoid this ton of code using AniJS ;)
+    var element = $('#cnt-partner #partner');
+    // when mouseover execute the animation
+    element.mouseover(function() {
+        // the animation starts
+        element.stop().addClass('partner animated');
+        // do something when animation ends
+        element.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e) {
+            // trick to execute the animation again
+            $(e.target).stop().removeClass('partner animated');
+        });
+    });
+})

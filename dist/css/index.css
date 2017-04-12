@@ -79,11 +79,11 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 
 .cnt-ours .map { position: absolute; z-index: -1; height: 100%; bottom: 0; left: 0; }
 
-.ours-logo { height: 440px; border-right: 1px solid #5f6964; padding-top: 100px; margin-left: 50px; }
+.ours-logo { height: 100%; position: absolute; border-right: 1px solid #5f6964; padding-top: 100px; margin-left: 50px; }
 
 .ours-logo img { width: 160px; height: 160px; }
 
-.ours-addr-info { margin: 136px 0 0 50px; }
+.ours-addr-info { margin: 136px 0 0 270px; }
 
 .ours-addr-info dl { transition: all 1s; margin-top: 40px; position: absolute; }
 
@@ -164,7 +164,9 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 /* 右侧浮动弹窗 */
 .share { display: none; position: fixed; right: 50px; bottom: 222px; width: 36px; height: 152px; color: #fff; z-index: 1; }
 
-.share li { position: relative; display: block; width: 36px; height: 36px; margin-bottom: 1px; line-height: 36px; text-align: center; }
+.share li { position: relative; display: block; width: 36px; height: 36px; margin-bottom: 1px; line-height: 46px; text-align: center; }
+
+.share li:hover { cursor: pointer; }
 
 .share li img { width: auto; height: auto; display: inline-block; }
 
@@ -173,8 +175,6 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 .share li dl dt { font-size: 14px; line-height: 56px; height: 56px; padding: 0 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; text-align: left; }
 
 .share li dl dd { padding-left: 20px; padding-right: 20px; }
-
-.share li:hover { cursor: pointer; }
 
 .telephone dl { top: 0; }
 
@@ -236,6 +236,8 @@ body { min-width: 1310px; }
 /* 服务 */
 .cnt-service ul { overflow: hidden; width: 100%; }
 
+.cnt-service ul li { position: relative; float: left; width: 280px; top: 200px; margin-left: 60px; opacity: 0; }
+
 .cnt-service ul li:first-child { margin-left: 0; transition: all 1.5s; }
 
 .cnt-service ul li:nth-child(2) { transition: all 1.8s; }
@@ -244,13 +246,11 @@ body { min-width: 1310px; }
 
 .cnt-service ul li:nth-child(4) { transition: all 2.2s; }
 
-.cnt-service ul li { float: left; width: 280px; margin-top: 200px; margin-left: 60px; opacity: 0; }
+.cnt-service ul li > span { display: inline-block; width: 280px; height: 240px; overflow: hidden; transition: all .5s; }
 
-.cnt-service ul li img { width: 280px; height: 240px; transition: all .5s; }
+.cnt-service ul li > h3 { font-size: 24px; margin: 60px 0 30px; transition: all .5s; text-align: center; color: #666; }
 
-.cnt-service ul li h3 { font-size: 24px; margin: 60px 0 30px; transition: all .5s; text-align: center; color: #666; }
-
-.cnt-service ul li p { font-size: 18px; line-height: 28px; padding: 0 10px; transition: all .5s; text-align: center; letter-spacing: 2px; color: #999; }
+.cnt-service ul li > p { font-size: 18px; line-height: 28px; padding: 0 10px; transition: all .5s; text-align: center; letter-spacing: 2px; color: #999; }
 
 /* 成果 */
 .cnt-projects { position: relative; height: 900px; padding-top: 0; background-color: #eee; }
@@ -280,3 +280,23 @@ body { min-width: 1310px; }
 .projects-main .prev { left: 244px; background: url(../images/icons/index/left.png) no-repeat center; }
 
 .projects-main .next { right: 244px; background: url(../images/icons/index/right.png) no-repeat center; }
+
+/* 合作伙伴 */
+.animated { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+
+.animated.infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+
+.animated.hinge { -webkit-animation-duration: 2s; animation-duration: 2s; }
+
+.partner { -webkit-animation-name: partner; animation-name: partner; }
+
+@-webkit-keyframes partner { 0% { -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+    opacity: 0; }
+  50% { opacity: 1; } }
+
+@keyframes partner { 0% { -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    -ms-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+    opacity: 0; }
+  50% { opacity: 1; } }
