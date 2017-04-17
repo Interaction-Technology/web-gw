@@ -11,16 +11,18 @@
 <body>
     <!-- top -->
     @@include("header.html")
-    <div class="banner">
-        <img class="ban" src="images/service/banner.png" alt="bannner">
-    </div>
+    <!-- banner -->
+    <div class="banner"></div>
     <!-- content -->
-    <div class="sre-cnt">
-        <div class="w1300 facion-ser">
-            <h1>专业性服务</h1>
-            <ul>
+    <div class="w1300">
+        <div class="cnt">
+            <!--专业性服务-->
+            <h2>专业性服务</h2>
+            <ul class="facion-ser pb50 mb80">
                 <li>
-                    <img src="images/service/user.png" />
+                    <span class="service-img">
+                        <img src="images/img/service/user.png" />
+                    </span>
                     <dl>
                         <dt>用户体验</dt>
                         <dd>需求分析</dd>
@@ -31,7 +33,9 @@
                     </dl>
                 </li>
                 <li>
-                    <img src="images/service/dein.png" />
+                    <span class="service-img">
+                        <img src="images/img/service/dein.png" />
+                    </span>
                     <dl>
                         <dt>设计、开发</dt>
                         <dd>交互设计</dd>
@@ -43,7 +47,9 @@
                     </dl>
                 </li>
                 <li>
-                    <img src="images/service/idea.png" />
+                    <span class="service-img">
+                        <img src="images/img/service/idea.png" />
+                    </span>
                     <dl>
                         <dt>品牌创意</dt>
                         <dd>商业洞察</dd>
@@ -55,7 +61,9 @@
                     </dl>
                 </li>
                 <li>
-                    <img src="images/service/number.png" />
+                    <span class="service-img">
+                        <img src="images/img/service/number.png" />
+                    </span>
                     <dl>
                         <dt>数字动画</dt>
                         <dd>视频制作</dd>
@@ -66,18 +74,60 @@
                     </dl>
                 </li>
             </ul>
-        </div>
-        <!--科学化流程-->
-        <div class="w1300 sire">
-            <h1>科学化流程</h1>
-            <div class="Technological-process">
-                <img src="images/service/xuqiu.png" />
+            <!--科学化流程-->
+            <h2>科学化流程</h2>
+            <div class="flow">
+                <div class="flow-box-top">
+                    <div class="flow-info flow-1">
+                        <div class="title">
+                            <i></i>
+                            <h3>需求分析</h3>
+                        </div>
+                        <p>深入、细化客户需求；收集、归纳需求分析；进行用户调研，转化具体产品需求，形成需求文档</p>
+                    </div>
+                    <div class="flow-info flow-3">
+                        <div class="title">
+                            <i></i>
+                            <h3>界面设计</h3>
+                        </div>
+                        <p>根据原型设计，对界面进行视觉效果处理，包括整体界面的色调、风格、界面、窗口、图标、皮肤的表现等，并进行切图为产品开发有效的资料</p>
+                    </div>
+                    <div class="flow-info flow-5">
+                        <div class="title">
+                            <i></i>
+                            <h3>功能测试</h3>
+                        </div>
+                        <p>负责产品的整体测试，包括可用性、信息反馈测试，界面间接性测试，界面美观度测试，用户动作性测试等，确保产品的上线质量</p>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="flow-box-bottom">
+                    <div class="flow-info flow-2">
+                        <p>流程设计、功能架构梳理、搭建，绘制原型。细化具体交互，实现好的用户体验</p>
+                        <div class="title">
+                            <i></i>
+                            <h3>信息整合</h3>
+                        </div>
+                    </div>
+                    <div class="flow-info flow-4">
+                        <p>严格按产品的主要流程及交互，运用专业的技能开发出可操作的产品，呈现给用户真实的体验</p>
+                        <div class="title">
+                            <i></i>
+                            <h3>产品开发</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="line">
+                    <i></i><i></i><i class="line-node-1 "></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="line-node-2 "></i><i></i><i></i><i></i><i></i><i></i><i class="line-node-3 "></i><i></i><i></i><i></i><i></i><i></i><i class="line-node-4 "></i><i></i><i></i><i></i><i></i><i></i><i class="line-node-5 "></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+                <!-- <img src="images/img/service/xuqiu.png" /> -->
             </div>
         </div>
     </div>
     @@include("share.html")
     <!-- footer -->
     @@include("footer.html")
+    <script type="text/javascript" src="js/service.js"></script>
 </body>
 
 </html>

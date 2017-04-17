@@ -23,7 +23,7 @@ nav ul .collaboration { display: inline-block; width: 108px; background-color: #
 nav ul .collaboration:hover { color: #000; cursor: pointer; }
 
 /* 我要合作弹窗 */
-.cooperation { display: none; width: 840px; height: 500px; background-color: #fff; position: fixed; top: 256px; left: 50%; margin-left: -420px; z-index: 2; border-radius: 10px; }
+.cooperation { display: none; width: 840px; height: 500px; background-color: #fff; position: fixed; top: 256px; left: 50%; margin-left: -420px; z-index: 2; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); }
 
 .cooperation .close { background-image: url("../images/icons/index/colse.png"); width: 16px; height: 16px; display: block; float: right; margin: 30px; }
 
@@ -67,6 +67,86 @@ nav ul .collaboration:hover { color: #000; cursor: pointer; }
 
 .cooperation .coo-right .sumbit { height: 48px; }
 
+/*base code*/
+.animatedShow { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+
+.animatedShow.infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+
+.animatedShow.hinge { -webkit-animation-duration: 2s; animation-duration: 2s; }
+
+/*the animation definition*/
+@-webkit-keyframes cooperation-show { 0% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0; }
+  40% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+  60% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  100% { -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+@keyframes cooperation-show { 0% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    opacity: 0; }
+  40% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in; }
+  60% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  100% { -webkit-transform: perspective(400px);
+    -ms-transform: perspective(400px);
+    transform: perspective(400px); } }
+
+.cooperation-show { -webkit-backface-visibility: visible !important; -ms-backface-visibility: visible !important; backface-visibility: visible !important; -webkit-animation-name: cooperation-show; animation-name: cooperation-show; }
+
+/*base code*/
+.animatedHide { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+
+.animatedHide.infinite { -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
+
+.animatedHide.hinge { -webkit-animation-duration: 2s; animation-duration: 2s; }
+
+/*the animation definition*/
+@-webkit-keyframes cooperation-hide { 0% { -webkit-transform: perspective(400px);
+    transform: perspective(400px); }
+  30% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1; }
+  100% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0; } }
+
+@keyframes cooperation-hide { 0% { -webkit-transform: perspective(400px);
+    -ms-transform: perspective(400px);
+    transform: perspective(400px); }
+  30% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1; }
+  100% { -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0; } }
+
+.cooperation-hide { -webkit-animation-name: cooperation-hide; animation-name: cooperation-hide; -webkit-backface-visibility: visible !important; -ms-backface-visibility: visible !important; backface-visibility: visible !important; }
+
 /* 底部 */
 footer .info { height: 50px; text-align: center; line-height: 50px; color: #414040; }
 
@@ -79,13 +159,13 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 
 .cnt-ours .map { position: absolute; z-index: -1; height: 100%; bottom: 0; left: 0; }
 
-.ours-logo { height: 100%; position: absolute; border-right: 1px solid #5f6964; padding-top: 100px; margin-left: 50px; }
+.ours-logo { height: 100%; position: absolute; border-right: 1px solid #5f6964; padding-top: 100px; margin-left: 116px; }
 
-.ours-logo img { width: 160px; height: 160px; }
+.ours-logo img { width: 100px; height: 100px; }
 
 .ours-addr-info { margin: 136px 0 0 270px; }
 
-.ours-addr-info dl { transition: all 1s; margin-top: 40px; position: absolute; }
+.ours-addr-info dl { transition: all 1s; position: absolute; }
 
 .ours-addr-info dl dt { font-size: 18px; color: #fff; }
 
@@ -97,25 +177,25 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 
 .ours-addr-img { margin-top: 200px; margin-right: 102px; position: relative; width: 200px; height: 200px; }
 
-.ours-addr-img li { width: 200px; height: 200px; border-radius: 50%; border: 2px solid #f8f8f8; position: absolute; opacity: 0; margin-top: 50px; transition: all 1s; }
+.ours-addr-img li { width: 200px; height: 200px; border-radius: 50%; border: 2px solid #f8f8f8; position: absolute; opacity: 0; margin-top: 0; transition: all 1s; }
+
+.ours-addr-img li:nth-child(4) { opacity: 1; }
 
 .ours-addr-img li span { position: absolute; top: 50%; left: -50px; font-size: 18px; color: #fff; margin-top: -9px; width: 36px; display: block; border-bottom: 2px solid #fff; }
 
 .ours-addr-img li img { width: 100%; height: 100%; border-radius: 50%; }
 
-.ours-addr-img li:first-child { opacity: 1; }
+.ours-addr-node li { border-radius: 50%; width: 8px; height: 8px; position: absolute; background-color: #e4e5e5; }
 
-.ours-addr-node li { border-radius: 50%; width: 12px; height: 12px; position: absolute; background-color: #e4e5e5; }
+.ours-addr-node li span { width: 100px; position: absolute; color: #fff; font-size: 12px; }
 
-.ours-addr-node li span { width: 100px; position: absolute; color: #fff; }
+.ours-addr-node li:hover { cursor: pointer; }
 
-.ours-addr-node li:hover { cursor: pointer; font-size: 16px; }
-
-.ours-addr-node .addr-sz { bottom: 34%; left: 58%; }
+.ours-addr-node .addr-sz { bottom: 33%; left: 58.2%; }
 
 .ours-addr-node .addr-sz span { top: -20px; }
 
-.ours-addr-node .addr-wh { bottom: 40%; left: 57%; }
+.ours-addr-node .addr-wh { bottom: 40%; left: 58%; }
 
 .ours-addr-node .addr-wh span { top: -20px; left: -20px; }
 
@@ -123,11 +203,13 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 
 .ours-addr-node .addr-nj span { top: -20px; left: 10px; }
 
-.ours-addr-node .addr-bj { bottom: 50%; left: 58%; }
+.ours-addr-node .addr-bj { bottom: 50%; left: 59%; }
 
 .ours-addr-node .addr-bj span { width: 100px; position: absolute; top: -20px; color: #fff; }
 
 .ours-addr-node .atcive { animation: macolor 1.5s ease-out; animation-iteration-count: infinite; }
+
+.ours-addr-node .atcive span { transition: all .3s; display: none; }
 
 .ours-addr-node .atcive:before { content: ""; width: 26px; height: 26px; border-radius: 50%; display: block; background-color: white; position: absolute; margin: -13px 0 0 -13px; left: 50%; top: 50%; animation: myfirst 1.5s ease-out; -moz-animation: myfirst 1.5s ease-out; /* Firefox */ -webkit-animation: myfirst 1.5s ease-out; /* Safari 和 Chrome */ -o-animation: myfirst 1.5s ease-out; animation-iteration-count: infinite; -moz-animation-iteration-count: infinite; -webkit-animation-iteration-count: infinite; -o-animation-iteration-count: infinite; }
 
@@ -162,7 +244,7 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
     opacity: 0.0; } }
 
 /* 右侧浮动弹窗 */
-.share { display: none; position: fixed; right: 50px; bottom: 222px; width: 36px; height: 152px; color: #fff; z-index: 1; }
+.share { display: none; position: fixed; right: 50px; bottom: 140px; width: 36px; height: 152px; color: #fff; z-index: 1; }
 
 .share li { position: relative; display: block; width: 36px; height: 36px; margin-bottom: 1px; line-height: 46px; text-align: center; }
 
@@ -170,13 +252,13 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 
 .share li img { width: auto; height: auto; display: inline-block; }
 
-.share li dl { position: absolute; left: -224px; width: 220px; border-radius: 4px; background-color: #fff; }
+.share li dl { position: absolute; left: -224px; width: 220px; border-radius: 4px; background-color: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5); }
 
 .share li dl dt { font-size: 14px; line-height: 56px; height: 56px; padding: 0 20px; border-top-left-radius: 4px; border-top-right-radius: 4px; text-align: left; }
 
 .share li dl dd { padding-left: 20px; padding-right: 20px; }
 
-.telephone dl { top: 0; }
+.telephone dl { bottom: 0; }
 
 .telephone dl dd { line-height: 41px; height: 41px; text-align: left; border-top: 1px solid #f7f7f7; }
 
@@ -184,7 +266,7 @@ footer .info { height: 50px; text-align: center; line-height: 50px; color: #4140
 
 .telephone dl dd .t-phone { background-image: url(../images/icons/index/tell-phone.png); width: 10px; height: 14px; display: block; margin: 14px 10px 0 2px; }
 
-.share-WeChat dl { top: 0; }
+.share-WeChat dl { bottom: 0; }
 
 .share-WeChat dl dd { text-align: center; padding: 20px 0 10px 0; }
 
@@ -247,37 +329,49 @@ h2 { font-size: 40px; text-align: center; color: #666; margin-bottom: 60px; }
 /* 公司成员-核心 */
 .core-member-list { margin-right: 1px; }
 
-.core-member-list li { position: relative; width: 149px; height: 134px; margin-top: -23px; background: url(../images/icons/ours/member-bg.png) no-repeat; }
+.core-member-list li { position: relative; width: 149px; height: 134px; margin-top: -23px; background: url(../images/icons/ours/member-bg.png) no-repeat; opacity: .6; cursor: pointer; transition: all .3s; }
 
 .core-member-list li:first-child { margin-top: 0; }
 
-.core-member-list li .img-box { position: absolute; top: 0; left: 0; width: 104px; height: 104px; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; }
+.core-member-list li .img-box { position: absolute; top: 0; left: 0; width: 104px; height: 104px; -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; transition: all .3s; }
 
-.core-member-list li:hover .img-box, .core-member-list li.on .img-box { -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); -ms-filter: grayscale(0%); -o-filter: grayscale(0%); filter: grayscale(0%); }
+.core-member-list li:hover, .core-member-list li.list-on { opacity: 1; }
 
-.info-img { display: inline-block; width: 320px; height: 432px; }
+.core-member-list li:hover .img-box, .core-member-list li.list-on .img-box { -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); -ms-filter: grayscale(0%); -o-filter: grayscale(0%); filter: grayscale(0%); }
 
-.info-list { width: 630px; height: 332px; padding: 60px 60px 0; background-color: #fcfcfc; color: #666; }
+.core-member-info li.info-on .info-list { left: 0; opacity: 1; }
+
+.info-img { display: inline-block; width: 320px; height: 432px; position: relative; z-index: 2; transition: all .5s; }
+
+.info-list { width: 630px; height: 372px; padding: 60px 60px 0; background-color: #fcfcfc; color: #666; position: relative; z-index: 1; left: -200px; opacity: 0; transition: all .5s; }
 
 .info-list dt { font-size: 48px; line-height: 1; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #f0f0f0; }
 
 .info-list dt span { font-size: 30px; margin-left: 28px; }
 
-.info-list dd { width: 280px; padding-left: 40px; float: left; font-size: 18px; line-height: 1; margin-bottom: 25px; }
+.info-list dd { width: 275px; padding-left: 40px; float: left; font-size: 18px; line-height: 1; margin-bottom: 25px; }
 
 .info-list dd:before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 15px; background-color: #666; position: relative; top: -2px; margin-right: 20px; }
 
 .info-list p { padding-top: 17px; border-top: 1px solid #f0f0f0; font-size: 14px; line-height: 24px; }
 
 /* 公司成员-员工 */
-.office-member li { display: inline-block; width: 10%; height: 122px; background-color: #333; float: left; overflow: hidden; }
+.office-member li { display: inline-block; width: 10%; height: 120px; float: left; overflow: hidden; position: relative; }
+
+.office-member li:before { content: ''; display: inline-block; position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); z-index: 1; }
+
+.office-member li img { -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); filter: grayscale(100%); filter: gray; }
+
+.office-member li:hover:before { background-color: transparent; }
+
+.office-member li:hover img { -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); -ms-filter: grayscale(0%); -o-filter: grayscale(0%); filter: grayscale(0%); }
 
 /* 发展历程 */
 .development { height: 400px; background: url(../images/icons/ours/line.png) no-repeat center; }
 
-.development > div { width: 160px; display: inline-block; margin-left: 26px; position: relative; opacity: .6; }
+.development > div { width: 160px; display: inline-block; margin-left: 26px; position: relative; opacity: .6; transition: all .3s; }
 
-.development > div:first-child { margin-left: 55px; opacity: 1; }
+.development > div:first-child { margin-left: 55px; }
 
 .development > div i, .development > div strong, .development > div small { display: block; margin: 0 auto; }
 
@@ -285,23 +379,29 @@ h2 { font-size: 40px; text-align: center; color: #666; margin-bottom: 60px; }
 
 .development > div strong { position: relative; width: 127px; height: 92px; }
 
-.development > div p { position: absolute; font-size: 14px; color: #666; line-height: 24px; text-align: center; }
+.development > div p { position: absolute; font-size: 14px; color: #666; line-height: 24px; text-align: center; transition: all .3s; opacity: 0; }
 
 .development .dev-top { top: -5px; }
 
-.development .dev-top p { top: 284px; }
+.development .dev-top p { top: 360px; }
+
+.development .dev-top.show { opacity: 1; }
+
+.development .dev-top.show p { top: 284px; opacity: 1; }
 
 .development .dev-bottom { top: 225px; }
 
 .development .dev-bottom strong { top: -272px; }
 
-.development .dev-bottom p { top: -225px; }
+.development .dev-bottom p { top: -337px; }
+
+.development .dev-bottom.show { opacity: 1; }
+
+.development .dev-bottom.show p { top: -225px; opacity: 1; }
 
 .dev-2006 i { background: url(../images/icons/ours/jiaohu.png) no-repeat center; }
 
 .dev-2006 strong { background: url(../images/icons/ours/2006.png) no-repeat center; }
-
-.dev-2006 p { top: 284px; }
 
 .dev-2012 i { background: url(../images/icons/ours/huawei.png) no-repeat center; }
 
@@ -323,4 +423,6 @@ h2 { font-size: 40px; text-align: center; color: #666; margin-bottom: 60px; }
 
 .dev-future strong { background: url(../images/icons/ours/future.png) no-repeat center; }
 
-.dev-future p { top: -155px !important; }
+.dev-future p { top: -277px !important; }
+
+.dev-future.show p { top: -155px !important; }

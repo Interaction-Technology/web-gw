@@ -1,4 +1,93 @@
-@charset "UTF-8";
-@import "sass/header";
-@import "sass/footer";
-@import "sass/share";
+@charset 'UTF-8';
+@import 'sass/header';
+@import 'sass/footer';
+@import 'sass/share';
+@import 'sass/secondary-base';
+.banner {
+    background: url(../images/banner/class/banner.png) no-repeat center;
+}
+
+h3 {
+    padding-top: 132px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    img {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+.class-variety {
+    li {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 380px;
+        height: 520px;
+        margin-left: 40px;
+        text-align: center;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .class-ui {
+        background: url(../images/img/class/class-bg-ui.jpg) no-repeat;
+    }
+    .class-web {
+        background: url(../images/img/class/class-bg-web.jpg) no-repeat;
+    }
+    .class-ue {
+        background: url(../images/img/class/class-bg-ue.jpg) no-repeat;
+    }
+}
+
+.class-btn-more {
+    font-size: 14px;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    color: #070200;
+    a {
+        line-height: 38px;
+        display: inline-block;
+        width: 158px;
+        height: 38px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        background-color: transparent;
+        transition: all .3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        &:after{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 160px;
+            width: 0;
+            height: 40px;
+            background-color: #eeff01;
+            opacity: .7;
+            left: 0;
+            top: 0;
+            transition: all .3s;
+            z-index: -1;
+        }
+        &:hover {
+            color: #000;
+            border-color: #eeff01;
+            &:after{
+                width: 160px;
+            }
+            // text-decoration: none;
+            // text-decoration: none;
+            // background-color: rgba(255, 255, 255, .3);
+            // border-color: rgba(255, 255, 255, .3);
+            // color: #fff;
+            // width: 100%;
+            // border-radius: 0;
+        }
+    }
+}

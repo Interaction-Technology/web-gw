@@ -1,110 +1,132 @@
-@charset "UTF-8";
-@import "sass/header";
-@import "sass/footer";
-@import "sass/share";
-
-.ach-cnt {
-    background-color: #f0f0f0;
-    width: 100%;
-    height: auto;
-    h1 {
-    font-size: 40px;
-    color: #666;
-    text-align: center;
+@charset 'UTF-8';
+@import 'sass/header';
+@import 'sass/footer';
+@import 'sass/share';
+@import 'sass/secondary-base';
+.banner {
+    background: url(../images/banner/achievements/banner.png) no-repeat center;
 }
-    .ach-itme {
-        margin-top: 40px;
-        overflow: hidden;
-        padding: 0 40px;
+
+.tab {
+    text-align: center;
+    span {
+        font-size: 24px;
+        display: inline-block;
+        margin-left: 80px;
+        color: #999;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .active {
+        color: #070200;
+        border-bottom: 2px solid #070200;
+    }
+}
+
+.pro-list {
+    margin-bottom: 29px;
+    ul {
+        margin: 0 -10px;
         li {
             float: left;
             width: 25%;
-            transition: all 0.5s;
             height: 430px;
-            img {
-                width: auto;
-                height: auto;
-            }
-            &:hover {
-                cursor: pointer;
-                .ach-info {
-                    margin-top: -50px;
-                }
-                .ach{
-                    box-shadow: 0 2px 5px #999;
-                }
-            }
-            
+            transition: all .5s;
         }
     }
 }
-.ach-ach {
-    padding-top: 80px;
-    background-color: #fff;
-    position: relative;
-    top: -100px;
-    .ach-tab {
-        margin-top: 80px;
-        text-align: center;
-        span {
-            display: inline-block;
-            margin-left: 80px;
-            font-size: 24px;
-            color: #999;
-            &:first-child {
-                margin-left: 0;
-            }
-            &:hover {
-                cursor: pointer;
-            }
-        }
-        .ach-tab-ate {
-            color: #070200;
-            border-bottom: 2px solid #070200;
-        }
-    }
-}
-.ach {
-    width: 290px;
+
+.project {
     overflow: hidden;
     height: 395px;
-    .ach-img {
+    margin: 0 10px;
+    // border: 1px solid #eee;
+    transition: all .3s;
+    .project-img {
+        display: block;
+        overflow: hidden;
         width: 290px;
         height: 290px;
-        overflow: hidden;
     }
-    .ach-info {
+    .project-info {
         position: relative;
         padding-top: 30px;
+        padding-bottom: 20px;
+        transition: all .5s;
         text-align: center;
         background-color: #fff;
-        transition: all 0.5s;
-        padding-bottom: 20px;
-        p {
+        h2 {
             font-size: 18px;
-            color: #666;
             margin-bottom: 18px;
+            color: #666;
         }
-        span {
+        p {
             font-size: 14px;
             color: #999;
         }
         a {
+            line-height: 40px;
+            display: block;
             width: 120px;
             height: 40px;
-            border-radius: 20px;
-            display: block;
+            margin: 20px auto 0;
             text-align: center;
-            line-height: 40px;
+            text-decoration: none;
             color: #999;
             border: 1px solid #999;
-            margin: 20px auto 0 auto;
-            text-decoration: none;
-         &:hover{
-             background-color: #eeff01;
-             color: #000;
-             border: none;
-         }
+            border-radius: 20px;
+            transition: all 1s;
+            position: relative;
+            top: 20px;
+            opacity: 0;
+            &:hover {
+                transition: all .3s;
+                color: #000;
+                border-color: #eeff01;
+                background-color: #eeff01;
+            }
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .3);
+        .project-info {
+            margin-top: -50px;
+            a{
+                display: block;
+                top: 0;
+                opacity: 1;
+            }
+        }
+        .project {
+            transition: all .3s;
+            // box-shadow: 0 3px 5px #999;
+        }
+    }
+}
+
+.page {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    a {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        margin-left: 10px;
+        transition: all .3s;
+        color: #666;
+        &:hover,&.on {
+            background-color: #eeff01;
+            color: #070200;
         }
     }
 }

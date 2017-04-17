@@ -3,13 +3,13 @@ var heig = $(window).height();
 var banImg = document.getElementById("banner");
 banImg.style.height = heig + "px";
 
-$(function() {
-    //nav点击事件
-    $("nav ul li").click(function() {
-        $("nav ul li").removeClass('nav-ate');
-        $(this).addClass('nav-ate');
-    })
-})
+// $(function() {
+//     //nav点击事件
+//     $("nav ul li").click(function() {
+//         $("nav ul li").removeClass('nav-ate');
+//         $(this).addClass('nav-ate');
+//     })
+// });
 
 $(window).scroll(function() {
     //鼠标滚动切换第二屏
@@ -33,6 +33,7 @@ $(window).scroll(function() {
         })
     };
 });
+
 
 //banner动画效果
 var MX, MY, WW, WH, X, Y, OX, OY, HWW, HWH, RX, RY, S = 0.7,
@@ -104,7 +105,17 @@ jQuery("#projects").slide({
 });
 
 // 合作伙伴动效
-$(function() {
+
+$(window).scroll(function() {
+    var $top = document.body.scrollTop;
+
+    if ($top > 1200) {
+
+        $('#partner').show().addClass('partner animated');
+
+    }
+});
+/*$(function() {
     // Tip: avoid this ton of code using AniJS ;)
     var element = $('#cnt-partner #partner');
     // when mouseover execute the animation
@@ -117,4 +128,4 @@ $(function() {
             $(e.target).stop().removeClass('partner animated');
         });
     });
-})
+})*/

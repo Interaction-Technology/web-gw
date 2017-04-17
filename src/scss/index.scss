@@ -1,486 +1,340 @@
-@import "sass/header";
-@import "sass/footer";
-@import "sass/share";
+@import 'sass/header';
+@import 'sass/footer';
+@import 'sass/share';
 body {
     min-width: 1310px;
 }
+
+
 /* banner */
+
 .banner {
-    width: 100%;
-    height: auto;
-    transition: all 0.5s;
-    background-color: #0c1914;
     position: relative;
     overflow: hidden;
-     
-    .ban-top-1{
-        width: 204px;
-        height:221px;
-       
+    width: 100%;
+    height: auto;
+    transition: all .5s;
+    background-color: #0c1914;
+    .ban-top-1 {
         position: absolute;
         top: 0;
         left: 0;
-        transition: all 0.5s;
+        width: 204px;
+        height: 221px;
+        transition: all .5s;
     }
-    .ban-top-2{
-        width: 753px;
-        height:249px;
-       
+    .ban-top-2 {
         position: absolute;
         top: 0;
         left: 50%;
+        width: 753px;
+        height: 249px;
         background-repeat: no-repeat;
     }
-    .ban-butt-1{
-        width: 542px;
-        height:542px;
-       
+    .ban-butt-1 {
         position: absolute;
         bottom: -40%;
         left: 10%;
+        width: 542px;
+        height: 542px;
         background-repeat: no-repeat;
     }
-    .ban-butt-2{
-        width: 240px;
-        height:485px;
-        
+    .ban-butt-2 {
         position: absolute;
-        bottom: -10%;
         right: 0;
+        bottom: -10%;
+        width: 240px;
+        height: 485px;
         background-repeat: no-repeat;
     }
-    .ban-text{
-         width: 1109px;
-        height:326px;
-        
+    .ban-text {
         position: absolute;
         top: 50%;
         left: 50%;
-        margin:-163px 0 0 -554px;
+        width: 1109px;
+        height: 326px;
+        margin: -163px 0 0 -554px;
         background-repeat: no-repeat;
         background-size: 100%;
     }
-    .red-png{
+    .red-png {
+        position: absolute;
+        right: 20%;
+        bottom: 20%;
+        display: block;
         width: 24px;
         height: 23px;
-        display: block;
-        background-image: url(../images/gif/red.png);
-        position: absolute;
-        bottom: 20%;
-        right: 20%;
         animation: ban 2s ease-out;
         animation-iteration-count: infinite;
+        background-image: url(../images/banner/index/red.png);
     }
-    .blue-one-png{
-        width: 82px;
-        height: 44px;
-        display: block;
-        background-image: url(../images/gif/bule-one.png);
+    .blue-one-png {
         position: absolute;
         bottom: -26px;
         left: 38%;
-        animation: ban 2s ease-out;
-        animation-iteration-count: infinite;
-    }
-    .blue-two-png{
-        width: 89px;
-        height: 79px;
         display: block;
-        background-image: url(../images/gif/bule-two.png);
+        width: 82px;
+        height: 44px;
+        animation: ban 4s ease-out;
+        animation-iteration-count: infinite;
+        background-image: url(../images/banner/index/bule-one.png);
+    }
+    .blue-two-png {
         position: absolute;
         bottom: 30%;
         left: -10px;
-        animation: ban 2s ease-out;
-        animation-iteration-count: infinite;
-    }
-    .green-png{
-        width: 62px;
-        height: 72px;
         display: block;
-        background-image: url(../images/gif/green.png);
+        width: 89px;
+        height: 79px;
+        animation: ban 6s ease-out;
+        animation-iteration-count: infinite;
+        background-image: url(../images/banner/index/bule-two.png);
+    }
+    .green-png {
         position: absolute;
         top: 50%;
         right: 20%;
-        animation: ban 2s ease-out;
-        animation-iteration-count: infinite;
-    }
-    .yellow-png{
-        width: 34px;
-        height: 40px;
         display: block;
-        background-image: url(../images/gif/yellow.png);
+        width: 62px;
+        height: 72px;
+        animation: ban 5s ease-out;
+        animation-iteration-count: infinite;
+        background-image: url(../images/banner/index/green.png);
+    }
+    .yellow-png {
         position: absolute;
         top: 50%;
         left: 20%;
-        animation: ban 2s ease-out;
+        display: block;
+        width: 34px;
+        height: 40px;
+        animation: ban 3s ease-out;
         animation-iteration-count: infinite;
+        background-image: url(../images/banner/index/yellow.png);
     }
-    .banner-gif,.banner-gif2{
+    .banner-gif,
+    .banner-gif2 {
+        position: absolute;
         width: 100%;
         height: 100%;
-        transition: all 0.2s ease-out;
-        position: absolute;
+        transition: all .2s ease-out;
     }
 }
+
 @keyframes ban {
     0% {
-       transform: rotateY(0deg);
+        transform: rotateY(0deg);
     }
     20% {
-       transform: rotateY(60deg);
+        transform: rotateY(60deg);
     }
     40% {
-       transform: rotateY(120deg);
+        transform: rotateY(120deg);
     }
     100% {
-       transform: rotateY(0deg);
+        transform: rotateY(0deg);
     }
 }
+
+
 /* 主体 */
+
 .cnt {
-    padding-top: 80px;
     width: 100%;
+    padding-top: 80px;
     h2 {
-        height: 60px;
-        width: 160px;
-        margin: 0 auto 100px;
-        border-bottom: 2px solid #58DD00;
+        // border-bottom: 2px solid #eeff01;
         font-size: 40px;
+        width: 160px;
+        height: 60px;
+        margin: 0 auto 100px;
         text-align: center;
     }
 }
+
+
 /* 服务 */
+
 .cnt-service {
     ul {
-        width: 100%;
         overflow: hidden;
-        li:first-child {
-            margin-left: 0;     
-            transition: all 1.5s;       
-        }
-        li:nth-child(2) {
-             transition: all 1.8s;          
-        }
-        li:nth-child(3) {
-             transition: all 2s;     
-        }
-        li:nth-child(4) {
-             transition: all 2.2s;      
-        }
+        width: 100%;
         li {
-            width: 280px;
+            position: relative;
             float: left;
+            width: 280px;
+            top: 200px;
+            // margin-top: 200px;
             margin-left: 60px;
-           
-            opacity: 0; 
-            margin-top: 200px;
-            img {
+            opacity: 0;
+            &:first-child {
+                margin-left: 0;
+                transition: all 1.5s;
+            }
+            &:nth-child(2) {
+                transition: all 1.8s;
+            }
+            &:nth-child(3) {
+                transition: all 2s;
+            }
+            &:nth-child(4) {
+                transition: all 2.2s;
+            }
+            & > span {
+                display: inline-block;
                 width: 280px;
                 height: 240px;
-                transition: all 0.5s;
+                overflow: hidden;
+                transition: all .5s;
             }
-            h3 {
-                font-size: 30px;
-                color: #666666;
-                text-align: center;
+            & > h3 {
+                font-size: 24px;
                 margin: 60px 0 30px;
-                transition: all 0.5s;
-            }
-            p {
-                padding: 0 10px;
-                font-size: 18px;
-                color: #999999;
+                transition: all .5s;
                 text-align: center;
+                color: #666;
+            }
+            & > p {
+                font-size: 18px;
                 line-height: 28px;
+                padding: 0 10px;
+                transition: all .5s;
+                text-align: center;
                 letter-spacing: 2px;
-                transition: all 0.5s;
+                color: #999;
             }
         }
     }
 }
+
+
 /* 成果 */
-.cnt-result {
-    background-image: url("../images/home/bg-cg.png");
-    text-align: center;
-    h2 {
-        height: 60px;
-        width: 160px;
-        margin: 0 auto 50px;
-        border-bottom: 2px solid #58DD00;
-        font-size: 40px;
-        text-align: center;
-    }
-    p {
-        font-size: 18px;
-        color: #5f5f5f;
-        width: 1000px;
-        margin: auto;
-        line-height: 28px;
-    }
-    .result-show {
-        img {
-            width: auto;
-            display: block;
-            margin: 60px auto 0;
-        }
-    }
-    .left-icon,.right-icon{
-        width: auto;      
-        position: absolute;
-        margin-top: -22px;
-        top: 50%;
-        display: initial;
-        
-    }
-    .left-icon{
-        left: 30%;
-    }
-    .right-icon{
-        right: 30%;
-    }
-}
-/* 我们 */
-.cnt-ours {
+
+.cnt-projects {
     position: relative;
-    overflow: hidden;
-    padding-top:0 ;
-    height: 600px;
-    .map {
+    height: 900px;
+    padding-top: 0;
+    background-color: #eee;
+    h2 {
         position: absolute;
-        z-index: -1;
-        height: 100%;
-        bottom: 0;
-        left: 0;
+        z-index: 1;
+        top: 80px;
+        left: 50%;
+        margin-left: -80px;
     }
-}
-.ours-logo {
-    height: 440px;
-    border-right: 1px solid #5f6964;
-    padding-top: 100px;
-    margin-left: 50px;
     img {
-        width: 160px;
-        height: 160px;
+        width: auto;
+        margin: 0 auto;
     }
 }
-.ours-addr-info {
-    margin: 136px 0 0 50px;
-    
-    dl {
-        transition: all 1s;
-        margin-top: 40px;
-        position: absolute;
-        dt {
-            font-size: 18px;
-            color: #fff;
-        }
-        span {
+
+.projects-main {
+    position: relative;
+    li {
+        position: relative;
+        height: 900px;
+        a {
+            position: absolute;
+            bottom: 0;
             width: 100%;
-            height: 1px;
-            display: block;
-            background-color: #5f6964;
-            margin: 30px 0;
-        }
-        dd {
-            font-size: 12px;
-            color: #fff;
-            margin-bottom: 17px;
-            img {
-                margin-top: 30px;
-                width: 140px;
-                height: 140px;
+            p {
+                font-size: 18px;
+                line-height: 24px;
+                position: relative;
+                top: -70px;
+                width: 1048px;
+                margin: 0 auto;
+                text-align: center;
+                color: #5f5f5f;
             }
         }
     }
-}
-.ours-addr-img {
-    margin-top: 200px;
-    margin-right: 102px;
-    position: relative;
-    width: 200px;
-    height: 200px;
-    li {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        border: 2px solid #f8f8f8;
+    .projects-list-1 {
+        background: url(../images/img/index/bg-cg.png) no-repeat center;
+    }
+    .projects-list-2 {
+        background: url(../images/img/index/bg-cg.png) no-repeat center;
+    }
+    .projects-list-3 {
+        background: url(../images/img/index/bg-cg.png) no-repeat center;
+    }
+    .prev,
+    .next {
         position: absolute;
-        opacity: 0;
-        margin-top: 50px;
-        transition: all 1s; 
-        span {
-            position: absolute;
-            top: 50%;
-            left: -50px;
-            font-size: 18px;
-            color: #fff;
-            margin-top: -9px;
-            width: 36px;
-            display: block;
-            border-bottom: 2px solid #fff;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
+        z-index: 3;
+        top: 50%;
+        display: block;
+        width: 50px;
+        height: 200px;
+        margin-top: -100px;
+        transition: all .3s;
+        opacity: .3;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, .3);
+        &:hover {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, .1);
         }
     }
-    li:first-child{
+    .prev {
+        left: 244px;
+        background: url(../images/icons/index/left.png) no-repeat center;
+    }
+    .next {
+        right: 244px;
+        background: url(../images/icons/index/right.png) no-repeat center;
+    }
+}
+
+
+/* 合作伙伴 */
+.cnt-partner{
+    height: 640px;
+    img{
+        display: none;
+    }
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.partner {
+    -webkit-animation-name: partner;
+    animation-name: partner;
+}
+
+@-webkit-keyframes partner {
+    0% {
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        opacity: 0;
+    }
+    50% {
         opacity: 1;
     }
 }
-.ours-addr-node {
-    li {
-        border-radius: 50%;
-        width: 12px;
-        height: 12px;
-        position: absolute;
-        background-color: #e4e5e5;
-        span{
-            width: 100px;
-            position: absolute;
-            color: #fff;
-        }
-    }
-    li:hover {
-        cursor: pointer;
-        font-size: 16px;
-    }
-    .addr-sz {
-        bottom: 34%;
-        left: 58%;
-        span{
-            top: -20px;         
-        }
-    }
-    .addr-wh {
-        bottom: 40%;
-        left: 57%;
-        span{
-            top: -20px;
-            left: -20px;
-        }
-    }
-    .addr-nj {
-        bottom: 44%;
-        left: 59%;
-        span{
-            top: -20px; 
-            left: 10px;
-        }
-    }
-    .addr-bj {
-        bottom: 50%;
-        left: 58%;
-        span{
-            width: 100px;
-            position: absolute;
-            top: -20px;
-            color: #fff;
-        }
-    }
-    .atcive {
-        animation: macolor 1.5s ease-out;
-        animation-iteration-count: infinite;
-    }
-    .atcive:before {
-        content: "";
-        width: 26px;
-        height: 26px;
-        border-radius: 50%;
-        display: block;
-        background-color: rgba(255, 255, 255, 1);
-        position: absolute;
-        margin: -13px 0 0 -13px;
-        left: 50%;
-        top: 50%;
-        animation: myfirst 1.5s ease-out;
-        -moz-animation: myfirst 1.5s ease-out;
-        /* Firefox */
-        -webkit-animation: myfirst 1.5s ease-out;
-        /* Safari 和 Chrome */
-        -o-animation: myfirst 1.5s ease-out;
-        animation-iteration-count: infinite;
-        -moz-animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-        -o-animation-iteration-count: infinite;
-    }
-    .atcive:after {
-        content: "";
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: block;
-        background-color: rgba(255, 255, 255, 1);
-        position: absolute;
-        margin: -20px 0 0 -20px;
-        left: 50%;
-        top: 50%;
-        animation: mysen 1.5s ease-out;
-        -moz-animation: mysen 1.5s ease-out;
-        /* Firefox */
-        -webkit-animation: mysen 1.5s ease-out;
-        /* Safari 和 Chrome */
-        -o-animation: mysen 1.5s ease-out;
-        animation-iteration-count: infinite;
-        -moz-animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-        -o-animation-iteration-count: infinite;
-    }
-}
-#address .pal-2,#address .pal-3,#address .pal-1{
-    opacity: 0;
-}
-/* 呼吸灯动画 */
-@keyframes mycolor {
+
+@keyframes partner {
     0% {
-        background-color: #e4e5e5;
-    }
-    100% {
-        background-color: #fff;
-    }
-}
-@keyframes myfirst {
-    0% {
-        -webkit-transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        -webkit-transform: scale(0);
-        opacity: 0.1;
+        -webkit-transform: scale3d(.3, .3, .3);
+        -ms-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+        opacity: 0;
     }
     50% {
-        -webkit-transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        -webkit-transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 0.0;
-    }
-}
-@keyframes mysen {
-    0% {
-        -webkit-transform: scale(0);
-        opacity: 0.0;
-    }
-    25% {
-        -webkit-transform: scale(0);
-        opacity: 0.1;
-    }
-    50% {
-        -webkit-transform: scale(0.1);
-        opacity: 0.3;
-    }
-    75% {
-        -webkit-transform: scale(0.5);
-        opacity: 0.5;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 0.0;
+        opacity: 1;
     }
 }
