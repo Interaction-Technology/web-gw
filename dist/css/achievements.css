@@ -29,7 +29,7 @@ nav ul .collaboration:hover { color: #000; cursor: pointer; }
 
 .cooperation .close:hover { cursor: pointer; }
 
-.cooperation h1 { height: 80px; background: #eeff01; border-radius: 10px 10px 0 0; font-size: 24px; color: #070200; line-height: 80px; padding-left: 60px; }
+.cooperation .form-title { height: 80px; background: #eeff01; border-radius: 10px 10px 0 0; font-size: 24px; color: #070200; line-height: 80px; padding-left: 60px; }
 
 .cooperation ul { padding: 40px 0 0 60px; height: 380px; }
 
@@ -45,27 +45,27 @@ nav ul .collaboration:hover { color: #000; cursor: pointer; }
 
 .cooperation .coo-right { border-radius: 0 0 10px 0; }
 
-.cooperation .coo-right p { margin-bottom: 20px; }
+.cooperation .coo-right p { margin-bottom: 20px; padding-left: 20px; }
 
 .cooperation .coo-right li { height: 44px; line-height: 44px; overflow: hidden; }
 
-.cooperation .coo-right li span { color: #666; font-size: 14px; width: 100px; text-align: right; height: 34px; display: inline-block; float: left; }
+.cooperation .coo-right li label { color: #666; font-size: 14px; width: 100px; text-align: right; height: 34px; display: inline-block; float: left; }
 
 .cooperation .coo-right li input { height: 30px; width: 340px; border: none; border: 1px solid #ebebeb; display: inline-block; padding-left: 4px; outline: none; }
 
-.cooperation .coo-right li textarea { width: 340px; border: none; border: 1px solid #ebebeb; display: inline-block; height: 60px; margin-top: 10px; padding: 4px; outline: none; }
+.cooperation .coo-right li textarea { width: 336px; border: none; border: 1px solid #ebebeb; display: inline-block; height: 60px; margin-top: 10px; padding: 4px; outline: none; }
 
 .cooperation .coo-right li .xuqiu { float: right; width: 340px; padding-right: 4px; line-height: 2; color: #999; }
 
-.cooperation .coo-right li button { width: 350px; float: right; height: 48px; line-height: 48px; font-size: 16px; color: #070200; background-color: #eeff01; border: none; border-radius: 2px; outline: none; }
+.cooperation .coo-right li .btn-submit { width: 350px; float: right; height: 48px; line-height: 48px; font-size: 16px; color: #070200; background-color: #eeff01; border: none; border-radius: 2px; outline: none; }
 
-.cooperation .coo-right li button:hover { cursor: pointer; }
+.cooperation .coo-right li .btn-submit:hover { cursor: pointer; }
 
 .cooperation .coo-right .text-box { height: 80px; }
 
 .cooperation .coo-right .text-text { height: 40px; }
 
-.cooperation .coo-right .sumbit { height: 48px; }
+.cooperation .coo-right .submit { height: 48px; }
 
 /*base code*/
 .animatedShow { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
@@ -318,7 +318,7 @@ h2 { font-size: 40px; text-align: center; color: #666; margin-bottom: 60px; }
 
 .project .project-info a:hover { transition: all .3s; color: #000; border-color: #eeff01; background-color: #eeff01; }
 
-.project:hover { cursor: pointer; box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3); }
+.project:hover { box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.3); }
 
 .project:hover .project-info { margin-top: -50px; }
 

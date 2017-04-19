@@ -1,7 +1,7 @@
 <header class="header">
     <div class="w1300">
         <h1 class="logo fl"><a href="index.html">交互科技</a></h1>
-        <nav class="fr">
+        <nav class="fr" id="nav">
             <ul>
                 <li>
                     <a href="../index.html">首页</a>
@@ -27,7 +27,7 @@
 </header>
 <!--我要合作-->
 <div class="cooperation">
-    <h1>我要合作 <i class="close"></i></h1>
+    <p class="form-title">我要合作 <i class="close"></i></p>
     <ul class="coo-left fl">
         <p>直接联系</p>
         <li>电话：0755-8621 8452</li>
@@ -35,37 +35,31 @@
         <li>邮箱：jiaohu@mid-ui.com</li>
         <li class="coo-erweima"></li>
     </ul>
-    <ul class="coo-right fl">
-        <p>提交需求</p>
-        <li>
-            <span>
-   	     		称呼：
-   	     	</span>
-            <input />
-        </li>
-        <li>
-            <span>
-   	     		电话：
-   	     	</span>
-            <input />
-        </li>
-        <li>
-            <span>
-   	     		QQ/微信：
-   	     	</span>
-            <input />
-        </li>
-        <li class="text-box">
-            <span>
-   	     		需求描述：
-   	     	</span>
-            <textarea></textarea>
-        </li>
-        <li class="text-text">
-            <a class="xuqiu">请简单描述您的需求，我们会在24小时内联系您。</a>
-        </li>
-        <li class="sumbit">
-            <button>提交</button>
-        </li>
-    </ul>
+    <form name="form">
+        <ul class="coo-right fl">
+            <p>提交需求</p>
+            <li>
+                <label for="username">称呼：</label>
+                <input type="text" id="username" name="username" />
+            </li>
+            <li>
+                <label for="phone">电话：</label>
+                <input id="phone" name="phone" />
+            </li>
+            <li>
+                <label for="qq-wechat">QQ/微信：</label>
+                <input id="qq-wechat" name="qqWechat" />
+            </li>
+            <li class="text-box">
+                <label for="need">需求描述：</label>
+                <textarea id="need" name="need"></textarea>
+            </li>
+            <li class="text-text">
+                <em class="xuqiu">请简单描述您的需求，我们会在24小时内联系您。</em>
+            </li>
+            <li class="submit">
+                <input class="btn-submit" type="submit" name="" value="提交">
+            </li>
+        </ul>
+    </form>
 </div>

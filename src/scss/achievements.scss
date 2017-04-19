@@ -92,11 +92,11 @@
         }
     }
     &:hover {
-        cursor: pointer;
+        // cursor: pointer;
         box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .3);
         .project-info {
             margin-top: -50px;
-            a{
+            a {
                 display: block;
                 top: 0;
                 opacity: 1;
@@ -124,7 +124,8 @@
         margin-left: 10px;
         transition: all .3s;
         color: #666;
-        &:hover,&.on {
+        &:hover,
+        &.on {
             background-color: #eeff01;
             color: #070200;
         }

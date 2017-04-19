@@ -102,7 +102,7 @@ nav {
     .close:hover {
         cursor: pointer;
     }
-    h1 {
+    .form-title {
         height: 80px;
         background: #eeff01;
         border-radius: 10px 10px 0 0;
@@ -145,12 +145,13 @@ nav {
         border-radius: 0 0 10px 0;
         p {
             margin-bottom: 20px;
+            padding-left: 20px;
         }
         li {
             height: 44px;
             line-height: 44px;
             overflow: hidden;
-            span {
+            label {
                 color: #666;
                 font-size: 14px;
                 width: 100px;
@@ -169,7 +170,7 @@ nav {
                 outline: none;
             }
             textarea {
-                width: 340px;
+                width: 336px;
                 border: none;
                 border: 1px solid #ebebeb;
                 display: inline-block;
@@ -185,7 +186,7 @@ nav {
                 line-height: 2;
                 color: #999;
             }
-            button {
+            .btn-submit {
                 width: 350px;
                 float: right;
                 height: 48px;
@@ -197,7 +198,7 @@ nav {
                 border-radius: 2px;
                 outline: none;
             }
-            button:hover {
+            .btn-submit:hover {
                 cursor: pointer;
             }
         }
@@ -207,7 +208,7 @@ nav {
         .text-text {
             height: 40px;
         }
-        .sumbit {
+        .submit {
             height: 48px;
         }
     }
