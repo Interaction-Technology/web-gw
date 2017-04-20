@@ -321,8 +321,8 @@
                     </li>
                 </ul>
             </div>
-            <div class="page">
-                <a href="" class="pg-prev"> < </a>
+            <!-- <div class="page">
+                <a href="" class="pg-prev">《 </a>
                 <a href="" class="on">1</a>
                 <a href="">2</a>
                 <a href="">3</a>
@@ -330,13 +330,19 @@
                 <a href="">5</a>
                 <a href="">...</a>
                 <a href="">10</a>
-                <a href="" class="pg-next"> > </a>
+                <a href="" class="pg-next"> 》</a>
+            </div> -->
+            <div id="wrapper">
+                <section>
+                    <div class="page" id="pagination-page"></div>
+                </section>
             </div>
         </div>
     </div>
     @@include("share.html")
     <!-- footer -->
     @@include("footer.html")
+    <script type="text/javascript" src="js/pagination.js"></script>
     <script type="text/javascript" src="js/achievements.js"></script>
 </body>
 

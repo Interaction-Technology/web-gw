@@ -4,19 +4,19 @@
         <nav class="fr" id="nav">
             <ul>
                 <li>
-                    <a href="../index.html">首页</a>
+                    <a href="index.html">首页</a>
                 </li>
                 <li>
-                    <a href="../service.html">服务</a>
+                    <a href="service.html">服务</a>
                 </li>
                 <li>
-                    <a href="../achievements.html">成果</a>
+                    <a href="achievements.html">成果</a>
                 </li>
                 <li>
-                    <a href="../ours.html">我们</a>
+                    <a href="ours.html">我们</a>
                 </li>
                 <li>
-                    <a href="../class.html">课堂</a>
+                    <a href="class.html">课堂</a>
                 </li>
                 <li>
                     <a class="collaboration">我要合作</a>
@@ -35,31 +35,29 @@
         <li>邮箱：jiaohu@mid-ui.com</li>
         <li class="coo-erweima"></li>
     </ul>
-    <form name="form">
-        <ul class="coo-right fl">
-            <p>提交需求</p>
-            <li>
-                <label for="username">称呼：</label>
-                <input type="text" id="username" name="username" />
-            </li>
-            <li>
-                <label for="phone">电话：</label>
-                <input id="phone" name="phone" />
-            </li>
-            <li>
-                <label for="qq-wechat">QQ/微信：</label>
-                <input id="qq-wechat" name="qqWechat" />
-            </li>
-            <li class="text-box">
-                <label for="need">需求描述：</label>
-                <textarea id="need" name="need"></textarea>
-            </li>
-            <li class="text-text">
-                <em class="xuqiu">请简单描述您的需求，我们会在24小时内联系您。</em>
-            </li>
-            <li class="submit">
-                <input class="btn-submit" type="submit" name="" value="提交">
-            </li>
-        </ul>
-    </form>
+    <ul class="coo-right fl">
+        <p>提交需求</p>
+        <li>
+            <label for="username">称呼：</label>
+            <input type="text" id="username" name="username" placeholder="如何称呼您" />
+        </li>
+        <li>
+            <label for="phone">电话：</label>
+            <input class="telephone" id="phone" name="phone" placeholder="请留下您的联系方式（固话／手机均可）" />
+        </li>
+        <li>
+            <label for="qq-wechat">QQ/微信：</label>
+            <input id="qq-wechat" name="qqWechat" placeholder="" />
+        </li>
+        <li class="text-box">
+            <label for="need">需求描述：</label>
+            <textarea class="need" id="need" name="need" placeholder="请简要概述您的需求，不得少于10字"></textarea>
+        </li>
+        <li class="text-text">
+            <em class="xuqiu">请简单描述您的需求，我们会在24小时内联系您。</em>
+        </li>
+        <li class="submit">
+            <input class="btn-submit" id="btn-submit" type="submit" name="" value="提交">
+        </li>
+    </ul>
 </div>

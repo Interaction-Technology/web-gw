@@ -1,7 +1,7 @@
 $(function() {
     // 顶部导航
     var url = window.location.href;
-    // 载入页面后清楚高亮样式
+    /*// 载入页面后清除高亮样式
     $('#nav li').removeClass('nav-ate');
     // 判断当前页面链接是否包含所需关键词
     if (url.indexOf('index.html') >= 0) { //首页
@@ -19,6 +19,24 @@ $(function() {
     };
     if (url.indexOf('class.html') >= 0) { //课程
         $('#nav li').eq(4).addClass('nav-ate');
+    };*/
+
+    switch (true) {
+        case url.indexOf('index.html') >= 0:
+            $('#nav li').eq(0).addClass('nav-ate')
+            break;
+        case url.indexOf('service.html') >= 0:
+            $('#nav li').eq(1).addClass('nav-ate')
+            break;
+        case url.indexOf('achievements.html') >= 0:
+            $('#nav li').eq(2).addClass('nav-ate')
+            break;
+        case url.indexOf('ours.html') >= 0:
+            $('#nav li').eq(3).addClass('nav-ate')
+            break;
+        case url.indexOf('class.html') >= 0:
+            $('#nav li').eq(4).addClass('nav-ate')
+            break;
     };
 
     //合作弹窗
@@ -36,6 +54,10 @@ $(function() {
         // 添加隐藏动画
         $('.cooperation').addClass('cooperation-hide animatedHide');
         // return false;
+        setTimeout(function() {
+            $('.cooperation').hide();
+            $('#btn-submit').val('提交');
+        }, 1000);
     });
 
 
@@ -82,50 +104,75 @@ $(function() {
     });
 
 
-    // 我要合作表单
-    // $('#submitForm').validate({
-    //     /**/
-    //     /* 设置验证规则 */
-    //     rules: {
-    //         username: {
-    //             required: true,
-    //             stringCheck: true,
-    //             byteRangeLength: [3, 15]
-    //         },
-    //         phone: {
-    //             required: true,
-    //             isPhone: true
-    //         },
-    //     },
+    // 我要合作表单验证
 
-    //     /**/
-    //     /* 设置错误信息 */
-    //     messages: {
-    //         username: {
-    //             required: "请填写用户名",
-    //             stringCheck: "用户名只能包括中文字、英文字母、数字和下划线",
-    //             byteRangeLength: "用户名必须在3-15个字符之间(一个中文字算2个字符)"
-    //         },
-    //         email: {
-    //             required: "请输入一个Email地址",
-    //             email: "请输入一个有效的Email地址"
-    //         },
-    //         phone: {
-    //             required: "请输入您的联系电话",
-    //             isPhone: "请输入一个有效的联系电话"
-    //         },
-    //     },
+    function submit() {
+        var name = /^[\u4e00-\u9fa5_a-zA-Z]+$/; //用户名
+        var mobile = /^1(3|4|5|7|8)\d{9}$/;  //移动电话
+        // var tel = /^([0-9]{3,4}-)?[0-9]{7,8}$/;  //固定电话
+        // var mobile = /(^(0[0-9]{2,3}\-)?([2-9][0-9]{6,7})+(\-[0-9]{1,4})?$)|(^0?[1][358][0-9]{9}$)/; //手机和固话
 
-    //     /**/
-    //     /* 设置验证触发事件 */
-    //     focusInvalid: false,
-    //     onkeyup: false,
+        var name_str = $("#username").val();
+        var mobile_str = $("#phone").val();
+        // var tel_str = $("#phone").val();
+        var need_str = $('#need').val();
+        var data = { name: null, mobile: null, need: null };
+        // 验证称呼
+        if (name.test(name_str) && name_str.length >= 2 && name_str.length <= 15) {
+            data.name = mobile_str;
+        } else {
+            $("#username").attr('placeholder', '名字请填写中文或字母');
+            $("#username").val('');
+        };
+        // 验证手机号
+        if (mobile.test(mobile_str) && mobile_str.length >= 11) {
+            data.mobile = mobile_str
+        } else {
+            $("#phone").attr('placeholder', '请填写正确的联系方式');
+            $("#phone").val('');
+        };
+        // 验证固定电话号
+        /*if (tel.test(tel_str) && tel_str.length >= 11 && tel_str.length <= 13) {
+            data.tel = tel_str
+        } else {
+            $("#phone").attr('placeholder', '请填写正确的联系方式');
+            $("#phone").val('');
+        };*/
+        // 验证需求字段长度不少于10个字
+        if (need_str.length >= 10 && need_str.length <= 150) {
+            data.need = need_str
+        } else {
+            $('#need').attr('placeholder', '请最少输入10个字');
+            $("#need").val('');
+        };
+        // 提示提交是否成功
+        if (data.name && data.mobile && data.need) {
+            $(this).val('提交成功！');
+            // 清除显示动画
+            $('.cooperation').removeClass('cooperation-show animatedShow');
+            // 添加隐藏动画
+            $('.cooperation').addClass('cooperation-hide animatedHide');
+            // return false;
+            setTimeout(function() {
+                // 1秒后隐藏
+                $('.cooperation').hide();
+                // 清空各表单数据
+                $("#username").val('');
+                $("#phone").val('');
+                $("#need").val('');
+                // 按钮文字恢复为‘提交’
+                $('#btn-submit').val('提交');
+            }, 1000);
 
-    //     /**/
-    //     /* 设置错误信息提示DOM */
-    //     errorPlacement: function(error, element) {
-    //         error.appendTo(element.parent());
-    //     },
+        } else {
+            $(this).val('提交失败！');
+        };
 
-    // });
+        return false;
+
+    };
+
+    $('#btn-submit').click(submit);
+
+
 });

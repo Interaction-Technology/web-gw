@@ -113,19 +113,21 @@
     width: 100%;
     text-align: center;
     font-size: 0;
-    a {
+    li {
         display: inline-block;
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
         border-radius: 30px;
         text-align: center;
-        line-height: 20px;
+        line-height: 25px;
         font-size: 12px;
         margin-left: 10px;
         transition: all .3s;
         color: #666;
+        cursor: pointer;
         &:hover,
-        &.on {
+        &.active {
+            font-size: 14px;
             background-color: #eeff01;
             color: #070200;
         }

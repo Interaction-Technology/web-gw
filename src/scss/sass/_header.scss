@@ -1,25 +1,25 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
 /* 头部 */
 
 header,
 .header {
-    width: 100%;
-    height: 62px;
     position: fixed;
+    z-index: 99;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 62px;
     background-color: rgba(0, 0, 0, .8);
-    z-index: 99;
 }
 
 .logo {
-    margin-top: 15px;
+    display: block;
     float: left;
     width: 142px;
     height: 32px;
-    display: block;
-    background-image: url("../images/logo/logo-all.png");
+    margin-top: 15px;
+    background-image: url('../images/logo/logo-all.png');
     a {
         display: inline-block;
         width: 142px;
@@ -30,15 +30,15 @@ header,
 
 nav {
     ul {
-        display: inline-block;
         line-height: 60px;
+        display: inline-block;
         overflow: hidden;
         li {
             float: left;
             margin-left: 60px;
             a {
-                color: #999;
                 font-size: 14px;
+                color: #999;
             }
             a:hover {
                 text-decoration: none;
@@ -51,27 +51,27 @@ nav {
             }
         }
         .nav-ate:after {
-            content: "";
-            width: 100%;
-            height: 2px;
-            background-color: #eeff01;
-            display: block;
             position: relative;
             bottom: 14px;
+            display: block;
+            width: 100%;
+            height: 2px;
+            content: '';
+            background-color: #eeff01;
         }
         .collaboration {
+            line-height: 32px;
             display: inline-block;
             width: 108px;
-            background-color: #eeff01;
-            text-align: center;
             height: 32px;
-            line-height: 32px;
-            border-radius: 15px;
+            text-align: center;
             color: #070200;
+            border-radius: 15px;
+            background-color: #eeff01;
         }
         .collaboration:hover {
-            color: #000;
             cursor: pointer;
+            color: #000;
         }
     }
 }
@@ -80,65 +80,65 @@ nav {
 /* 我要合作弹窗 */
 
 .cooperation {
+    position: fixed;
+    z-index: 2;
+    top: 256px;
+    left: 50%;
     display: none;
     width: 840px;
     height: 500px;
-    background-color: #fff;
-    position: fixed;
-    top: 256px;
-    left: 50%;
     margin-left: -420px;
-    z-index: 2;
     border-radius: 10px;
+    background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, .5);
     .close {
-        background-image: url("../images/icons/index/colse.png");
-        width: 16px;
-        height: 16px;
         display: block;
         float: right;
+        width: 16px;
+        height: 16px;
         margin: 30px;
+        background-image: url('../images/icons/index/colse.png');
     }
     .close:hover {
         cursor: pointer;
     }
     .form-title {
-        height: 80px;
-        background: #eeff01;
-        border-radius: 10px 10px 0 0;
         font-size: 24px;
-        color: #070200;
         line-height: 80px;
+        height: 80px;
         padding-left: 60px;
+        color: #070200;
+        border-radius: 10px 10px 0 0;
+        background: #eeff01;
     }
     ul {
+        height: 380px;
+        padding: 40px 0 0 60px;
         p {
             font-size: 18px;
             color: #666;
         }
-        padding: 40px 0 0 60px;
-        height: 380px;
     }
     .coo-left {
         width: 240px;
-        background-color: #fafafa;
         border-radius: 0 0 0 10px;
+        background-color: #fafafa;
         li {
             margin-top: 26px;
         }
         .coo-erweima {
+            display: inline-block;
             width: 140px;
             height: 140px !important;
-            display: inline-block;
-            background-image: url("../images/img/index/map-erweima.png");
+            background-image: url('../images/img/index/map-erweima.png');
         }
         .coo-qq-icon {
+            position: relative;
+            top: 2px;
+            display: inline-block;
             width: 14px;
             height: 14px;
-            display: inline-block;
-            top: 2px;
-            position: relative;
-            background-image: url("../images/img/index/coo-qq.png");
+            background-image: url('../images/img/index/coo-qq.png');
         }
     }
     .coo-right {
@@ -148,55 +148,58 @@ nav {
             padding-left: 20px;
         }
         li {
-            height: 44px;
             line-height: 44px;
             overflow: hidden;
+            height: 44px;
             label {
-                color: #666;
                 font-size: 14px;
-                width: 100px;
-                text-align: right;
-                height: 34px;
                 display: inline-block;
                 float: left;
+                width: 100px;
+                height: 34px;
+                text-align: right;
+                color: #666;
             }
             input {
-                height: 30px;
+                display: inline-block;
                 width: 340px;
+                height: 30px;
+                padding-left: 4px;
                 border: none;
                 border: 1px solid #ebebeb;
-                display: inline-block;
-                padding-left: 4px;
                 outline: none;
             }
             textarea {
-                width: 336px;
-                border: none;
-                border: 1px solid #ebebeb;
                 display: inline-block;
-                height: 60px;
+                min-width: 336px;
+                max-width: 336px;
+                min-height: 60px;
+                max-height: 60px;
                 margin-top: 10px;
                 padding: 4px;
+                border: none;
+                border: 1px solid #ebebeb;
                 outline: none;
+                resize:none;
             }
             .xuqiu {
+                line-height: 2;
                 float: right;
                 width: 340px;
                 padding-right: 4px;
-                line-height: 2;
                 color: #999;
             }
             .btn-submit {
-                width: 350px;
-                float: right;
-                height: 48px;
-                line-height: 48px;
                 font-size: 16px;
+                line-height: 48px;
+                float: right;
+                width: 350px;
+                height: 48px;
                 color: #070200;
-                background-color: #eeff01;
                 border: none;
                 border-radius: 2px;
                 outline: none;
+                background-color: #eeff01;
             }
             .btn-submit:hover {
                 cursor: pointer;
@@ -215,6 +218,7 @@ nav {
 }
 
 // 弹窗显示动画
+
 /*base code*/
 
 .animatedShow {
@@ -240,136 +244,141 @@ nav {
 
 @-webkit-keyframes cooperation-show {
     0% {
-        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
         -webkit-transition-timing-function: ease-in;
         transition-timing-function: ease-in;
-        opacity: 0
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
     }
     40% {
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
         -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
         transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-        -webkit-transition-timing-function: ease-in;
-        transition-timing-function: ease-in
     }
     60% {
         -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
         transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-        opacity: 1
+        opacity: 1;
     }
     80% {
         -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-        transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
     }
     100% {
         -webkit-transform: perspective(400px);
-        transform: perspective(400px)
+        transform: perspective(400px);
     }
 }
 
 @keyframes cooperation-show {
     0% {
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
         -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
         -ms-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
         transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-        -webkit-transition-timing-function: ease-in;
-        transition-timing-function: ease-in;
-        opacity: 0
+        opacity: 0;
     }
     40% {
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in;
         -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
         -ms-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
         transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-        -webkit-transition-timing-function: ease-in;
-        transition-timing-function: ease-in
     }
     60% {
         -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
         -ms-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
         transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-        opacity: 1
+        opacity: 1;
     }
     80% {
         -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
         -ms-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-        transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
     }
     100% {
         -webkit-transform: perspective(400px);
         -ms-transform: perspective(400px);
-        transform: perspective(400px)
+        transform: perspective(400px);
     }
 }
 
 .cooperation-show {
+    -webkit-animation-name: cooperation-show;
+    animation-name: cooperation-show;
     -webkit-backface-visibility: visible!important;
     -ms-backface-visibility: visible!important;
     backface-visibility: visible!important;
-    -webkit-animation-name: cooperation-show;
-    animation-name: cooperation-show
 }
-
-
-
-
 
 // 弹窗隐藏动画
+
 /*base code*/
+
 .animatedHide {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  // display: none;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    // display: none;
 }
+
 .animatedHide.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
 }
+
 .animatedHide.hinge {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
 }
+
+
 /*the animation definition*/
+
 @-webkit-keyframes cooperation-hide {
-  0% {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px)
-  }
-  30% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    opacity: 1
-  }
-  100% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    opacity: 0
-  }
+    0% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
 }
+
 @keyframes cooperation-hide {
-  0% {
-    -webkit-transform: perspective(400px);
-    -ms-transform: perspective(400px);
-    transform: perspective(400px)
-  }
-  30% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -ms-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    opacity: 1
-  }
-  100% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -ms-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    opacity: 0
-  }
+    0% {
+        -webkit-transform: perspective(400px);
+        -ms-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    30% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -ms-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -ms-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        opacity: 0;
+    }
 }
+
 .cooperation-hide {
-  -webkit-animation-name: cooperation-hide;
-  animation-name: cooperation-hide;
-  -webkit-backface-visibility: visible!important;
-  -ms-backface-visibility: visible!important;
-  backface-visibility: visible!important
+    -webkit-animation-name: cooperation-hide;
+    animation-name: cooperation-hide;
+    -webkit-backface-visibility: visible!important;
+    -ms-backface-visibility: visible!important;
+    backface-visibility: visible!important;
 }
