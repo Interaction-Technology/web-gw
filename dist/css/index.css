@@ -47,7 +47,15 @@ nav ul .collaboration:hover { cursor: pointer; color: #000; }
 
 .cooperation .coo-right p { margin-bottom: 20px; padding-left: 20px; }
 
+.cooperation .coo-right p span { font-size: 12px; font-style: italic; }
+
+.cooperation .coo-right p span i { color: #f5143e; }
+
 .cooperation .coo-right li { line-height: 44px; overflow: hidden; height: 44px; }
+
+.cooperation .coo-right li .username, .cooperation .coo-right li .phone, .cooperation .coo-right li .need-tit { position: relative; }
+
+.cooperation .coo-right li .username:after, .cooperation .coo-right li .phone:after, .cooperation .coo-right li .need-tit:after { content: '*'; position: absolute; color: #f5143e; right: 8px; top: -6px; }
 
 .cooperation .coo-right li label { font-size: 14px; display: inline-block; float: left; width: 100px; height: 34px; text-align: right; color: #666; }
 

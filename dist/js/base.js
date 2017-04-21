@@ -37,6 +37,9 @@ $(function() {
         case url.indexOf('class.html') >= 0:
             $('#nav li').eq(4).addClass('nav-ate')
             break;
+        case url.indexOf('details.html') >= 0:
+            $('#nav li').eq(2).addClass('nav-ate')
+            break;
     };
 
     //合作弹窗

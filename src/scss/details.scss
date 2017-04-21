@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+@import 'sass/header';
+@import 'sass/footer';
+@import 'sass/share';
+@import 'sass/secondary-base';
+.banner {
+    background: url(../images/banner/achievements/banner.png) no-repeat center;
+}
+
+.cnt-details {
+	padding-top: 50px;
+    & > img {
+    	width: 100%;
+    	height: auto;
+        margin-bottom: 90px;
+    }
+    h2 {
+        margin-bottom: 15px;
+        font-size: 26px;
+    }
+    .sub-title {
+        font-size: 16px;
+        text-align: center;
+        color: #666;
+        margin-bottom: 40px;
+    }
+}
+
+.pro-list {
+    margin-bottom: 29px;
+    ul {
+        margin: 0 -35px;
+        li {
+            float: left;
+            width: 33.33%;
+            height: 430px;
+            transition: all .5s;
+        }
+    }
+}
+
+.project {
+    overflow: hidden;
+    // height: 395px;
+    margin: 0 35px;
+    // border: 1px solid #eee;
+    transition: all .3s;
+    .project-img {
+        display: block;
+        overflow: hidden;
+        // width: 290px;
+        // height: 290px;
+        margin-bottom: 20px;
+    }
+    h3 {
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}

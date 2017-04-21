@@ -146,11 +146,30 @@ nav {
         p {
             margin-bottom: 20px;
             padding-left: 20px;
+            span {
+                font-size: 12px;
+                font-style: italic;
+                i{
+                    color: #f5143e;
+                }
+            }
         }
         li {
             line-height: 44px;
             overflow: hidden;
             height: 44px;
+            .username,
+            .phone,
+            .need-tit {
+                position: relative;
+                &:after {
+                    content: '*';
+                    position: absolute;
+                    color: #f5143e;
+                    right: 8px;
+                    top: -6px;
+                }
+            }
             label {
                 font-size: 14px;
                 display: inline-block;
@@ -180,7 +199,7 @@ nav {
                 border: none;
                 border: 1px solid #ebebeb;
                 outline: none;
-                resize:none;
+                resize: none;
             }
             .xuqiu {
                 line-height: 2;
