@@ -111,7 +111,7 @@ $(function() {
 
     function submit() {
         var name = /^[\u4e00-\u9fa5_a-zA-Z]+$/; //用户名
-        var mobile = /^1(3|4|5|7|8)\d{9}$/;  //移动电话
+        var mobile = /^1(3|4|5|7|8)\d{9}$/; //移动电话
         // var tel = /^([0-9]{3,4}-)?[0-9]{7,8}$/;  //固定电话
         // var mobile = /(^(0[0-9]{2,3}\-)?([2-9][0-9]{6,7})+(\-[0-9]{1,4})?$)|(^0?[1][358][0-9]{9}$)/; //手机和固话
 
@@ -142,12 +142,12 @@ $(function() {
             $("#phone").val('');
         };*/
         // 验证需求字段长度不少于10个字
-        if (need_str.length >= 10 && need_str.length <= 150) {
+        /*if (need_str.length >= 10 && need_str.length <= 150) {
             data.need = need_str
         } else {
             $('#need').attr('placeholder', '请最少输入10个字');
             $("#need").val('');
-        };
+        };*/
         // 提示提交是否成功
         if (data.name && data.mobile && data.need) {
             $(this).val('提交成功！');
@@ -178,4 +178,17 @@ $(function() {
     $('#btn-submit').click(submit);
 
 
+
+
+    $(window).scroll(function() {
+        var $top = document.body.scrollTop;
+
+        if ($top > 10) {
+
+            $('.header').addClass('header-bg');
+
+        }else{
+            $('.header').removeClass('header-bg');            
+        }
+    });
 });

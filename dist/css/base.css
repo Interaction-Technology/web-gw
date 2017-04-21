@@ -27,7 +27,12 @@ i { display: inline-block; }
 /* 公共 */
 body { font-family: 'Microsoft Yahei', '黑体', sans-serif; font-size: 14px; line-height: 1.2; color: #5f5f5f; }
 
-.clearfix { clear: both; overflow: hidden; }
+/* .clearfix { clear: both; overflow: hidden; } */
+.clearfix { zoom: 1; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+
+.clearfix:after { clear: both; overflow: hidden; }
 
 .fl { float: left; }
 

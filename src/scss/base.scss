@@ -9,12 +9,25 @@ body {
     font-size: 14px;
     line-height: 1.2;
     color: #5f5f5f;
-    
 }
 
-.clearfix {
+
+/* .clearfix {
     clear: both;
     overflow: hidden;
+} */
+
+.clearfix {
+    zoom: 1;
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+        overflow: hidden;
+    }
 }
 
 .fl {
